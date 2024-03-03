@@ -1,0 +1,273 @@
+---
+layout: slides
+title: Lecture 01.01 Limits
+---
+
+<section class="outline-2" id="outline-container-org515b425">
+<h2 id="org515b425"><span class="section-number-2">1.</span> Limits</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<section class="outline-3" id="outline-container-org68e0611">
+<h3 id="org68e0611">Limits</h3>
+</section>
+<section class="outline-3" id="outline-container-org360b326">
+<h3 id="org360b326">Limits</h3>
+<div class="outline-text-3" id="text-org360b326">
+<div class="defn" id="orgaaca16b"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If the function values \(f(x)\) approach \(L\) as the values \(x\) approach \(a\), then the limit exists and we write
+\[
+\lim_{x\to a} f(x) = L.
+\]
+<b>Note</b>: Here we let \(x\) approach \(a\) but we consider only \(x \neq a\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgb9a8435">
+<h3 id="orgb9a8435">Sum Law</h3>
+<div class="outline-text-3" id="text-orgb9a8435">
+<div class="thm" id="org39ac673"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If the limits \(\lim_{x\to a}f(x)\) and \(\lim_{x\to a} g(x)\) exist, then
+</p>
+<p>
+\[
+\lim_{x \to a} \left[f(x) + g(x)\right] = \lim_{x\to a} f(x) + \lim_{x\to a} g(x)
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgff9ba66">
+<h3 id="orgff9ba66">Product Law</h3>
+<div class="outline-text-3" id="text-orgff9ba66">
+<div class="thm" id="org29cc8e8"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If the limits \(\lim_{x\to a}f(x)\) and \(\lim_{x\to a} g(x)\) exist, then
+</p>
+<p>
+\[
+\lim_{x \to a} \left[f(x) g(x)\right] = \left[\lim_{x\to a} f(x)\right] \left[\lim_{x\to a} g(x)\right]
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgd4672a8">
+<h3 id="orgd4672a8">Quotient Law</h3>
+<div class="outline-text-3" id="text-orgd4672a8">
+<div class="thm" id="org51a8c20"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If the limits \(\lim_{x\to a}f(x)\) and \(\lim_{x\to a} g(x)\) exist and if \(\lim_{x\to a} g(x) \neq 0\), then
+</p>
+<p>
+\[
+\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\displaystyle\lim_{x\to a} f(x)}{\displaystyle\lim_{x\to a} g(x)}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgd4ffb58">
+<h3 id="orgd4ffb58">Example</h3>
+<div class="outline-text-3" id="text-orgd4ffb58">
+<div class="eg" id="orgcdde22e"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate the limit,
+\[
+\lim_{x\to 3} 2 x^2 + 5x - 7
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org8f5f631">
+<h3 id="org8f5f631">Example</h3>
+<div class="outline-text-3" id="text-org8f5f631">
+<div class="eg" id="orga5c11e9"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate the limit,
+\[
+\lim_{x\to 2} \frac{x^2 - 4}{x-2}
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org372aa0f">
+<h2 id="org372aa0f"><span class="section-number-2">2.</span> One Sided Limits</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<section class="outline-3" id="outline-container-org1d020e3">
+<h3 id="org1d020e3">One Sided Limits</h3>
+</section>
+<section class="outline-3" id="outline-container-org2ea8481">
+<h3 id="org2ea8481">One Sided Limits (Left)</h3>
+<div class="outline-text-3" id="text-org2ea8481">
+<div class="defn" id="org0f4f229"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If the function values \(f(x)\) approach \(L\) as the values \(x\) approach \(a\) <b>from the left</b>, then the limit from the left exists and we write
+\[
+\lim_{x\to a^{\textcolor{red}{-}}} f(x) = L.
+\]
+<b>Note</b>: To say that \(x\) approaches \(a\) from the left means that we restrict to \(x \textcolor{red}{&lt;} a\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgd411db4">
+<h3 id="orgd411db4">One Sided Limits (Right)</h3>
+<div class="outline-text-3" id="text-orgd411db4">
+<div class="defn" id="org61b3de9"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If the function values \(f(x)\) approach \(L\) as the values \(x\) approach \(a\) <b>from the right</b>, then the limit from the right exists and we write
+\[
+\lim_{x\to a^{\textcolor{red}{+}}} f(x) = L.
+\]
+<b>Note</b>: To say that \(x\) approaches \(a\) from the right means that we restrict to \(x \textcolor{red}{&gt;} a\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgec368dc">
+<h3 id="orgec368dc">Limits and One Side Limits</h3>
+<div class="outline-text-3" id="text-orgec368dc">
+<div class="thm" id="orgaf9c42c"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\lim_{x\to x_0} f(x) = L
+\]
+if and only if
+\[
+\lim_{x\to x_0^-} f(x) = L \text{ and } \lim_{x\to x_0^+} f(x) = L
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orge07c4af">
+<h3 id="orge07c4af">Example</h3>
+<div class="outline-text-3" id="text-orge07c4af">
+<div class="eg" id="org5d41440"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate the left and right limits of the function
+\[
+f(x) = \begin{cases}
+x + 1, &amp; x \leq 2 \\
+x^2, &amp; x &gt; 2
+\end{cases}
+\]
+as \(x \to 2\).
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org300e04a">
+<h2 id="org300e04a"><span class="section-number-2">3.</span> Infinite Limits</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<section class="outline-3" id="outline-container-org7e012ae">
+<h3 id="org7e012ae">Infinite Limits</h3>
+</section>
+<section class="outline-3" id="outline-container-org4fefa2b">
+<h3 id="org4fefa2b">Infinite Limits</h3>
+<div class="outline-text-3" id="text-org4fefa2b">
+<div class="defn" id="org11cac7e"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If the functions values \(f(x)\) become positive and unbounded as \(x \to a\), then we write
+\[
+\lim_{x\to a} f(x) = \infty.
+\]
+</p>
+<p>
+If the functions values \(f(x)\) become negative and unbounded as \(x \to a\), then we write
+\[
+\lim_{x\to a} f(x) = -\infty.
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org01920bb">
+<h3 id="org01920bb">Example</h3>
+<div class="outline-text-3" id="text-org01920bb">
+<div class="eg" id="orgbec1a54"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate the limit
+\[
+\lim_{x\to 0} \frac{1}{x^2}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org21070c6">
+<h3 id="org21070c6">Example</h3>
+<div class="outline-text-3" id="text-org21070c6">
+<div class="eg" id="org0623e10"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate the limit
+\[
+\lim_{x \to 1} \frac{x+1}{x-1}
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org8fd760b">
+<h2 id="org8fd760b"><span class="section-number-2">4.</span> Squeeze Theorem</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<section class="outline-3" id="outline-container-orga91b9dc">
+<h3 id="orga91b9dc">Squeeze Theorem</h3>
+</section>
+<section class="outline-3" id="outline-container-org79d1f03">
+<h3 id="org79d1f03">Squeeze Theorem</h3>
+<div class="outline-text-3" id="text-org79d1f03">
+<div class="defn" id="orgf0ef936"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Suppose that \(\textcolor{green}{f(x)} \leq \textcolor{orange}{g(x)} \leq \textcolor{green}{h(x)}\) and that
+\[
+\lim_{x \to x_0} \textcolor{green}{f(x)} = \lim_{x \to x_0} \textcolor{green}{h(x)} = L.
+\]
+Then
+\[
+\lim_{x\to x_0} \textcolor{orange}{g(x)} = L.
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org30439fd">
+<h3 id="org30439fd">Example</h3>
+<div class="outline-text-3" id="text-org30439fd">
+<div class="eg" id="org8ec7c51"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Evaluate the limit
+</p>
+<p>
+\[
+\lim_{x\to 0} x^2 \sin \tfrac{1}{x}.
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgdded8b6">
+<h3 id="orgdded8b6">Example</h3>
+<div class="outline-text-3" id="text-orgdded8b6">
+<div class="eg" id="org1433e23"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Evaluate the limit
+\[
+\lim_{\theta \to 0} \sin \theta
+\]
+</p>
+</div>
+</div>
+</section>
+</section>

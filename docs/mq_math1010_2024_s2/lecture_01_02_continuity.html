@@ -1,0 +1,177 @@
+---
+layout: slides
+title: Lecture 01.02 Continuity
+---
+
+<section class="outline-2" id="outline-container-org18eea51">
+<h2 id="org18eea51"><span class="section-number-2">1.</span> Continuity</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<section class="outline-3" id="outline-container-orge436c45">
+<h3 id="orge436c45">Continuity</h3>
+</section>
+<section class="outline-3" id="outline-container-orgb37ad7f">
+<h3 id="orgb37ad7f">Continuity at a Point</h3>
+<div class="outline-text-3" id="text-orgb37ad7f">
+<div class="defn" id="org0b3f0d7"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A function \(f : (a, b) \to \mathbb{R}\) is continuous at the point \(x_0 \in (a, b)\) if
+\[
+\lim_{x\to x_0} f(x) = f(x_0).
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgff852fd">
+<h3 id="orgff852fd">Continuity at Endpoints</h3>
+<div class="outline-text-3" id="text-orgff852fd">
+<div class="defn" id="org8807b17"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A function \(f : [a, b] \to \mathbb{R}\) is continuous at the left end-point point \(a\) if
+\[
+\lim_{x\to a^+} f(x) = f(a).
+\]
+It is continuous at the right end-point \(b\) if
+\[
+\lim_{x\to b^-} f(x) = f(b).
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgbc654cb">
+<h3 id="orgbc654cb">Continuous Functions</h3>
+<div class="outline-text-3" id="text-orgbc654cb">
+<div class="defn" id="orgc377c77"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A function defined on an interval is continuous if it is continuous at every point of the interval.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org8c8474d">
+<h3 id="org8c8474d">Example</h3>
+<div class="outline-text-3" id="text-org8c8474d">
+<div class="eg" id="orgc948d2b"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The function
+\[
+f(x) = x^2 + 2 \quad \text{for} \quad x \in [3, 7]
+\]
+is continuous.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org3249973">
+<h3 id="org3249973">Example</h3>
+<div class="outline-text-3" id="text-org3249973">
+<div class="eg" id="orgdb6a747"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Show the function,
+\[
+f(x) = \frac{x-2}{x + 1}
+\]
+is continuous for every \(x_0 \neq -1\).
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org912278d">
+<h2 id="org912278d"><span class="section-number-2">2.</span> Continuity Laws</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<section class="outline-3" id="outline-container-orge42e196">
+<h3 id="orge42e196">Continuity Laws</h3>
+</section>
+<section class="outline-3" id="outline-container-org212adce">
+<h3 id="org212adce">Continuity Laws</h3>
+<div class="outline-text-3" id="text-org212adce">
+<div class="thm" id="orgdf80c94"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Sums, products and quotients (at points where the denominator is non-zero) of continuous functions are continuous.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgec805d7">
+<h3 id="orgec805d7">Example</h3>
+<div class="outline-text-3" id="text-orgec805d7">
+<div class="eg" id="org6bd1c65"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Show that the function
+\[
+f(x) = 2x + x^3 \frac{x-2}{x + 1}
+\]
+is continuous for every \(x\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org4d812d6">
+<h3 id="org4d812d6">Composition</h3>
+<div class="outline-text-3" id="text-org4d812d6">
+<div class="thm" id="org90e4435"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If \(f\) and \(g\) are continuous functions, then the composition \(f \circ g\) is continuous wherever it is defined.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org7a96ca5">
+<h3 id="org7a96ca5">Example</h3>
+<div class="outline-text-3" id="text-org7a96ca5">
+<div class="eg" id="org1e666f2"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(h(x) = \frac{1}{x^2 + 2}\) is continuous.
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org26c6fd3">
+<h2 id="org26c6fd3"><span class="section-number-2">3.</span> Continuity of Standard Functions</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<section class="outline-3" id="outline-container-orge9c92ef">
+<h3 id="orge9c92ef">Continuity of Standard Functions</h3>
+</section>
+<section class="outline-3" id="outline-container-org0fa4afc">
+<h3 id="org0fa4afc">Continuity of Standard Functions</h3>
+<div class="outline-text-3" id="text-org0fa4afc">
+<div class="thm" id="org4280f8c"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The following functions are continuous
+</p>
+<ul class="org-ul">
+<li><b>Polynomials</b>: \(c_n x^n + c_{n-1} x^{n-1} + \dots + c_1 x + c_0\)</li>
+<li><b>Trig functions</b>: \(\sin, \cos, \tan, \sec\), etc.</li>
+<li><b>Exponential and log</b>: \(e^x, \ln x\), \(b^x, \log_b x\)</li>
+<li><b>Inverse trig</b>: \(\sin^{-1}, \cos^{-1}, \tan^{-1}\), etc.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org87fb551">
+<h3 id="org87fb551">Example</h3>
+<div class="outline-text-3" id="text-org87fb551">
+<div class="eg" id="orgeb52591"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Any polynomial \(a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0\) is continuous.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgb22b616">
+<h3 id="orgb22b616">Example</h3>
+<div class="outline-text-3" id="text-orgb22b616">
+<div class="eg" id="org62f85b4"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The function \(\sin(x)\) is continuous at every \(x_0 \in \mathbb{R}\).
+</p>
+</div>
+</div>
+</section>
+</section>
