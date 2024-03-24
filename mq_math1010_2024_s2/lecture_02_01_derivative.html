@@ -1,0 +1,217 @@
+---
+layout: slides
+title: Lecture 02.01 The Derivative
+---
+
+<section class="outline-2" id="outline-container-orgae42435">
+<h2 id="orgae42435"><span class="section-number-2">1.</span> The derivative</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<section class="outline-3" id="outline-container-org207b85b">
+<h3 id="org207b85b">The derivative</h3>
+</section>
+<section class="outline-3" id="outline-container-orgc2e3c21">
+<h3 id="orgc2e3c21">The derivative</h3>
+<div class="outline-text-3" id="text-orgc2e3c21">
+<div class="defn" id="org162e0a6"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The derivative of \(f\) at \(x\) equals
+\[
+\lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
+\]
+provided the limit exists.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org4413cda">
+<h3 id="org4413cda">Derivative Notation</h3>
+<div class="outline-text-3" id="text-org4413cda">
+<p>
+The derivative may be written as any of
+</p>
+<ul class="org-ul">
+<li>\(\frac{df}{dx}\)</li>
+<li>\(\frac{d}{dx} f\)</li>
+<li>\(f'\)</li>
+<li>\(\dot{f}\)</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org4797d76">
+<h3 id="org4797d76">Example</h3>
+<div class="outline-text-3" id="text-org4797d76">
+<div class="eg" id="org358b55f"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Show that
+\[
+\frac{d}{dx} x = 1
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orga59c5ca">
+<h3 id="orga59c5ca">Example</h3>
+<div class="outline-text-3" id="text-orga59c5ca">
+<div class="eg" id="org243cd86"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Show that
+\[
+\frac{d}{dx} x^2 = 2x
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org5f80e88">
+<h2 id="org5f80e88"><span class="section-number-2">2.</span> Secant Line</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<section class="outline-3" id="outline-container-org1be1e6d">
+<h3 id="org1be1e6d">Secant Line</h3>
+</section>
+<section class="outline-3" id="outline-container-org406587c">
+<h3 id="org406587c">Secant Line</h3>
+<div class="outline-text-3" id="text-org406587c">
+<div class="defn" id="orgd3a85cf"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <i>secant line</i> for \(f(x)\) between \(x_1, x_2\) is the straight line though the points in the plane, \((x_1, f(x_1))\) and \((x_2, f(x_2))\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org596edc8">
+<h3 id="org596edc8">Differences</h3>
+<div class="outline-text-3" id="text-org596edc8">
+<div class="defn" id="orgffca034"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\Delta x = x_2 - x_1.
+\]
+</p>
+<p>
+\[
+\Delta f = f(x_2) - f(x_1).
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org853990b">
+<h3 id="org853990b">Difference Quotient</h3>
+<div class="outline-text-3" id="text-org853990b">
+<div class="defn" id="org1cb1a4c"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The quantity \(\tfrac{\Delta f}{\Delta x}\) is called the <i>difference quotient</i>.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orge6ed93a">
+<h3 id="orge6ed93a">Secant Line Slope</h3>
+<div class="outline-text-3" id="text-orge6ed93a">
+<div class="lem" id="org631bc9a"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The slope of the secant line is
+\[
+\frac{\Delta f}{\Delta x} = \frac{f(x_2) - f(x_1)}{x_2 - x_1}.
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org30c6d33">
+<h3 id="org30c6d33">Example</h3>
+<div class="outline-text-3" id="text-org30c6d33">
+<div class="eg" id="orgf7087f7"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(f(x) = x^2\) and let \(x_1 = 2\), \(x_2 = 3\). The secant line has equation
+\[
+y = 5x - 6
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org93f3ab2">
+<h2 id="org93f3ab2"><span class="section-number-2">3.</span> Tangent Line</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<section class="outline-3" id="outline-container-orga06ddd6">
+<h3 id="orga06ddd6">Tangent Line</h3>
+<div class="outline-text-3" id="text-orga06ddd6">
+<div class="defn" id="orgc3635b5"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <i>tangent line</i> at \(x\) is the line through the point in the plane, \((x, f(x))\) with slope \(f'(x)\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-orge6de857">
+<h3 id="orge6de857">Tangent Line Slope</h3>
+<div class="outline-text-3" id="text-orge6de857">
+<div class="lem" id="org07e1e5c"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+f'(x_1) = \lim_{x_2 \to x_1} \frac{f(x_2) - f(x_1)}{x_2 - x_1} = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x}.
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org75b8578">
+<h3 id="org75b8578">Tangent Line and Secant Line</h3>
+<div class="outline-text-3" id="text-org75b8578">
+<div class="thm" id="org86cdc37"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The tangent line at \(x\) is the limit of the secant lines as \(x_2 \to x_1\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-org74f40ee">
+<h3 id="org74f40ee">Example</h3>
+<div class="outline-text-3" id="text-org74f40ee">
+<div class="eg" id="org2ed7421"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(f(x) = x^2\) and let \(x_1 = 2\).
+</p>
+<p>
+Secant line has slope
+\[
+4 + \Delta x.
+\]
+Tangent line has slope \(4\)
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-org6420675">
+<h2 id="org6420675"><span class="section-number-2">4.</span> Differentiability Implies Continuity</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<section class="outline-3" id="outline-container-orgf344486">
+<h3 id="orgf344486">Differentiability Implies Continuity</h3>
+</section>
+<section class="outline-3" id="outline-container-orgd09a18e">
+<h3 id="orgd09a18e">Differentiability Implies Continuity</h3>
+<div class="outline-text-3" id="text-orgd09a18e">
+<div class="thm" id="orgf6ed72e"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If \(f\) is differentiable at \(x_0\), then \(f\) is also continuous at \(x_0\).
+</p>
+</div>
+<div class="pf" id="org8e45c2a">
+<p>
+\[
+f(x) - f(x_0) = \frac{\Delta f}{\Delta x} \Delta x \to 0.
+\]
+</p>
+</div>
+</div>
+</section>
+</section>
