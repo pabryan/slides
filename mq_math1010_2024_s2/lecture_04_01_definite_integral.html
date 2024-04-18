@@ -1,0 +1,146 @@
+---
+layout: slides
+lecture: '01'
+name: definite_integral
+title: Definite Integral
+week: '04'
+---
+
+<section class="outline-2" id="outline-container-definite_integral_title">
+<h2 id="definite_integral_title"><span class="section-number-2">1.</span> Definite Integral</h2>
+<div class="outline-text-2" id="text-definite_integral_title">
+</div>
+<section class="outline-3" id="outline-container-definite_integral_title-title">
+<h3 id="definite_integral_title-title">Definite Integral</h3>
+<div class="outline-text-3" id="text-definite_integral_title-title">
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-regular_partition">
+<h2 id="regular_partition"><span class="section-number-2">2.</span> Regular Partition</h2>
+<div class="outline-text-2" id="text-regular_partition">
+</div>
+<section class="outline-3" id="outline-container-regular_partition-title">
+<h3 id="regular_partition-title">Regular Partition</h3>
+<div class="outline-text-3" id="text-regular_partition-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-regular_partition-regular_partition">
+<h3 id="regular_partition-regular_partition">Regular Partition</h3>
+<div class="outline-text-3" id="text-regular_partition-regular_partition">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+<b>Regular Partition</b> of [a, b]
+</p>
+<ul class="org-ul">
+<li>\(\Delta x = \frac{b-a}{n}\)</li>
+<li>\(x_i = a + i \Delta x\)</li>
+<li>\(I_i = [x_{i-1}, x_i]\)</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-regular_partition-example1">
+<h3 id="regular_partition-example1">Example</h3>
+<div class="outline-text-3" id="text-regular_partition-example1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \([a, b] = [2, 5]\) and let \(n = 3\)
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-approximating_sum">
+<h2 id="approximating_sum"><span class="section-number-2">3.</span> Approximating Sum</h2>
+<div class="outline-text-2" id="text-approximating_sum">
+</div>
+<section class="outline-3" id="outline-container-approximating_sum-title">
+<h3 id="approximating_sum-title">Approximating Sums</h3>
+<div class="outline-text-3" id="text-approximating_sum-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-approximating_sum-min_max">
+<h3 id="approximating_sum-min_max">Min/Max</h3>
+<div class="outline-text-3" id="text-approximating_sum-min_max">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+m_i &amp;= \min \{f(x) : x \in I_i\} \\
+M_i &amp;= \max \{f(x) : x \in I_i\}
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-approximating_sum-example1">
+<h3 id="approximating_sum-example1">Example</h3>
+<div class="outline-text-3" id="text-approximating_sum-example1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(f(x) = x + 4\)</li>
+<li>\(x \in [2, 5]\)</li>
+<li>\(n = 3\)</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-approximating_sum-min_max_sum">
+<h3 id="approximating_sum-min_max_sum">Min/Max Sum</h3>
+<div class="outline-text-3" id="text-approximating_sum-min_max_sum">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+m_f(n) &amp;= (m_1 + \dots + m_n) \Delta x \\
+M_f(n) &amp;= (M_1 + \dots + M_n) \Delta x
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-approximating_sum-example2">
+<h3 id="approximating_sum-example2">Example</h3>
+<div class="outline-text-3" id="text-approximating_sum-example2">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(f(x) = x + 4\)</li>
+<li>\(x \in [2, 5]\)</li>
+<li>\(n = 3\)</li>
+</ul>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-definite_integral">
+<h2 id="definite_integral"><span class="section-number-2">4.</span> Definite Integral</h2>
+<div class="outline-text-2" id="text-definite_integral">
+</div>
+<section class="outline-3" id="outline-container-definite_integral-title">
+<h3 id="definite_integral-title">Definite Integral</h3>
+<div class="outline-text-3" id="text-definite_integral-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-definite_integral-definite_integral">
+<h3 id="definite_integral-definite_integral">Definite Integral</h3>
+<div class="outline-text-3" id="text-definite_integral-definite_integral">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+For \(f\) continuous, the definite integral is
+\[
+\int_a^b f(x) dx = \lim_{n\to\infty} m_f(n) = \lim_{n\to\infty} M_f(n)
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-definite_integral-example1">
+<h3 id="definite_integral-example1">Example</h3>
+<div class="outline-text-3" id="text-definite_integral-example1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int_0^1 x dx = \frac{1}{2}
+\]
+</p>
+</div>
+</div>
+</section>
+</section>
