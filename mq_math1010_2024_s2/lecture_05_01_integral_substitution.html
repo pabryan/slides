@@ -6,18 +6,142 @@ title: Integration by Substitution
 week: '05'
 ---
 
-<section class="outline-2" id="outline-container-&lt;topic&gt;">
-<h2 id="&lt;topic&gt;"><span class="section-number-2">1.</span> Topic</h2>
-<div class="outline-text-2" id="text-&lt;topic&gt;">
+<section class="outline-2" id="outline-container-art_of_integration">
+<h2 id="art_of_integration"><span class="section-number-2">1.</span> Art of Integration</h2>
+<div class="outline-text-2" id="text-art_of_integration">
 </div>
-<section class="outline-3" id="outline-container-&lt;topic&gt;-title">
-<h3 id="&lt;topic&gt;-title">Title Slide</h3>
-<div class="outline-text-3" id="text-&lt;topic&gt;-title">
+<section class="outline-3" id="outline-container-art_of_integration-title">
+<h3 id="art_of_integration-title">Art of Integration</h3>
+<div class="outline-text-3" id="text-art_of_integration-title">
 </div>
 </section>
-<section class="outline-3" id="outline-container-&lt;topic&gt;-&lt;slide&gt;">
-<h3 id="&lt;topic&gt;-&lt;slide&gt;">Slide</h3>
-<div class="outline-text-3" id="text-&lt;topic&gt;-&lt;slide&gt;">
+<section class="outline-3" id="outline-container-art_of_integration-example1">
+<h3 id="art_of_integration-example1">Example</h3>
+<div class="outline-text-3" id="text-art_of_integration-example1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Since \(\tfrac{d}{dx} \sin(x^2) = 2x \cos(x^2)\) we have that
+\[
+\int 2x \cos(x^2) dx = \sin(x^2) + C.
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-reverse_chain_rule">
+<h2 id="reverse_chain_rule"><span class="section-number-2">2.</span> Reversing the Chain Rule</h2>
+<div class="outline-text-2" id="text-reverse_chain_rule">
+</div>
+<section class="outline-3" id="outline-container-reverse_chain_rule-title">
+<h3 id="reverse_chain_rule-title">Reversing the Chain Rule</h3>
+<div class="outline-text-3" id="text-reverse_chain_rule-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-reverse_chain_rule">
+<h3 id="reverse_chain_rule">Chain Rule</h3>
+<div class="outline-text-3" id="text-reverse_chain_rule">
+<div class="lem"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(H(x) = F(g(x))\) is an anti-derivative for \(f(g(x)) g'(x)\) where \(F' = f\)
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-reverse_chain_rule-example1">
+<h3 id="reverse_chain_rule-example1">Example</h3>
+<div class="outline-text-3" id="text-reverse_chain_rule-example1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(f(u) = \cos(u)\) and \(g(x) = x^2\)
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-reverse_chain_rule-substitution">
+<h3 id="reverse_chain_rule-substitution">Substitution</h3>
+<div class="outline-text-3" id="text-reverse_chain_rule-substitution">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+If \(F' = f\)
+\[
+\int f(g(x) g'(x) dx = F(g(x)) + C
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-reverse_chain_rule-example2">
+<h3 id="reverse_chain_rule-example2">Example</h3>
+<div class="outline-text-3" id="text-reverse_chain_rule-example2">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate
+\[
+\int (x-4)^2 dx
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-reverse_chain_rule-example3">
+<h3 id="reverse_chain_rule-example3">Example</h3>
+<div class="outline-text-3" id="text-reverse_chain_rule-example3">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate
+\[
+\int x \sqrt{x^2 - 5} dx
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-substitution">
+<h2 id="substitution"><span class="section-number-2">3.</span> Substitution</h2>
+<div class="outline-text-2" id="text-substitution">
+</div>
+<section class="outline-3" id="outline-container-substitution-title">
+<h3 id="substitution-title">Substitution</h3>
+<div class="outline-text-3" id="text-substitution-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-substitution-substitution">
+<h3 id="substitution-substitution">Substitution</h3>
+<div class="outline-text-3" id="text-substitution-substitution">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int f(g(x)) g'(x) dx = \int f(u) du
+\]
+where \(u = g(x)\)
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-substitution-example1">
+<h3 id="substitution-example1">Example</h3>
+<div class="outline-text-3" id="text-substitution-example1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int 2x \cos(x^2) dx
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-substitution-example2">
+<h3 id="substitution-example2">Example</h3>
+<div class="outline-text-3" id="text-substitution-example2">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int (x-4)^2 dx.
+\]
+</p>
+</div>
 </div>
 </section>
 </section>
