@@ -6,18 +6,132 @@ title: Separable ODEs
 week: '06'
 ---
 
-<section class="outline-2" id="outline-container-&lt;topic&gt;">
-<h2 id="&lt;topic&gt;"><span class="section-number-2">1.</span> Topic</h2>
-<div class="outline-text-2" id="text-&lt;topic&gt;">
+<section class="outline-2" id="outline-container-solving_ode">
+<h2 id="solving_ode"><span class="section-number-2">1.</span> Solving ODE's</h2>
+<div class="outline-text-2" id="text-solving_ode">
 </div>
-<section class="outline-3" id="outline-container-&lt;topic&gt;-title">
-<h3 id="&lt;topic&gt;-title">Title Slide</h3>
-<div class="outline-text-3" id="text-&lt;topic&gt;-title">
+<section class="outline-3" id="outline-container-solving_ode-title">
+<h3 id="solving_ode-title">Solving ODE's</h3>
+<div class="outline-text-3" id="text-solving_ode-title">
 </div>
 </section>
-<section class="outline-3" id="outline-container-&lt;topic&gt;-&lt;slide&gt;">
-<h3 id="&lt;topic&gt;-&lt;slide&gt;">Slide</h3>
-<div class="outline-text-3" id="text-&lt;topic&gt;-&lt;slide&gt;">
+<section class="outline-3" id="outline-container-org07ce1a8">
+<h3 id="org07ce1a8">General Solution</h3>
+<div class="outline-text-3" id="text-org07ce1a8">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <b>General Solution</b> includes arbitrary constants and we use the initial conditions to determine the values of these constants.
+</p>
+</div>
+<p>
+The arbitrary constants are <b>constants of integration</b>
+\[
+F(x) = \int f(x) dx + C
+\]
+</p>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-ftc">
+<h2 id="ftc"><span class="section-number-2">2.</span> Solving ODE's using FTC</h2>
+<div class="outline-text-2" id="text-ftc">
+</div>
+<section class="outline-3" id="outline-container-ftc-title">
+<h3 id="ftc-title">Solving ODE's using FTC</h3>
+<div class="outline-text-3" id="text-ftc-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc-ftc">
+<h3 id="ftc-ftc">FTC</h3>
+<div class="outline-text-3" id="text-ftc-ftc">
+<div class="lem"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+y'(t) &amp;= f(t) \\
+\Rightarrow y(t) &amp;= y(t_0) + \int_{t_0}^t f(u) du
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc-ftc">
+<h3 id="ftc-ftc">Example</h3>
+<div class="outline-text-3" id="text-ftc-ftc">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+y'(t) = t^2
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc-freefall">
+<h3 id="ftc-freefall">Free Fall</h3>
+<div class="outline-text-3" id="text-ftc-freefall">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{equation*}
+\begin{cases}
+z''(t) &amp;= -g \\
+z(0) &amp;= z_0 \\
+z'(0) &amp;= v_0
+\end{cases}
+\end{equation*}
+
+<p>
+Let \(v = z'\dots \)
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-separable">
+<h2 id="separable"><span class="section-number-2">3.</span> Separable ODE's</h2>
+<div class="outline-text-2" id="text-separable">
+</div>
+<section class="outline-3" id="outline-container-separable-title">
+<h3 id="separable-title">Separable ODE's</h3>
+<div class="outline-text-3" id="text-separable-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-separable-">
+<h3 id="separable-">Separable ODE's</h3>
+<div class="outline-text-3" id="text-separable-">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A separable ODE is an ODE of the form
+\[
+f(y) y' = g(t)
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-separable-exponential">
+<h3 id="separable-exponential">Exponential Growth/Decay</h3>
+<div class="outline-text-3" id="text-separable-exponential">
+\begin{equation*}
+\begin{cases}
+y' &amp;= 3 y \\
+y(0) &amp;= 4
+\end{cases}
+\end{equation*}
+</div>
+</section>
+<section class="outline-3" id="outline-container-separable-logistic">
+<h3 id="separable-logistic">Logistic Growth</h3>
+<div class="outline-text-3" id="text-separable-logistic">
+\begin{equation*}
+\begin{cases}
+p' &amp;= 5p(3-p) \\
+p(0) &amp;= 1
+\end{cases}
+\end{equation*}
+
+<p>
+\[
+p(t) = \frac{5}{1 + 4 e^{-15t}}
+\]
+</p>
 </div>
 </section>
 </section>

@@ -6,18 +6,211 @@ title: Ordinary Differential Equations
 week: '06'
 ---
 
-<section class="outline-2" id="outline-container-&lt;topic&gt;">
-<h2 id="&lt;topic&gt;"><span class="section-number-2">1.</span> Topic</h2>
-<div class="outline-text-2" id="text-&lt;topic&gt;">
+<section class="outline-2" id="outline-container-ode">
+<h2 id="ode"><span class="section-number-2">1.</span> Ordinary Differential Equations</h2>
+<div class="outline-text-2" id="text-ode">
 </div>
-<section class="outline-3" id="outline-container-&lt;topic&gt;-title">
-<h3 id="&lt;topic&gt;-title">Title Slide</h3>
-<div class="outline-text-3" id="text-&lt;topic&gt;-title">
+<section class="outline-3" id="outline-container-ode-title">
+<h3 id="ode-title">Ordinary Differential Equations</h3>
+<div class="outline-text-3" id="text-ode-title">
 </div>
 </section>
-<section class="outline-3" id="outline-container-&lt;topic&gt;-&lt;slide&gt;">
-<h3 id="&lt;topic&gt;-&lt;slide&gt;">Slide</h3>
-<div class="outline-text-3" id="text-&lt;topic&gt;-&lt;slide&gt;">
+<section class="outline-3" id="outline-container-ode-ode">
+<h3 id="ode-ode">ODE</h3>
+<div class="outline-text-3" id="text-ode-ode">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+An <b>O</b>​rdinary <b>D</b>​ifferential <b>E</b>​equation (<b>ODE</b>) is an equation involving one or more derivatives of a function
+</p>
+</div>
+<p>
+ODE's are <b>everywhere</b>: biology, engineering, physics, economics, chemistry, geometry, robotics, computer science, etc.
+</p>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ode-freefall">
+<h3 id="ode-freefall">Free Fall Under Gravity</h3>
+<div class="outline-text-3" id="text-ode-freefall">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Newton's second law \(F = ma\)
+\[
+z'' = -g
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ode-exponential_growth">
+<h3 id="ode-exponential_growth">Exponential Growth/Decay</h3>
+<div class="outline-text-3" id="text-ode-exponential_growth">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Rate of change proportional to amount (carbon dating, continuous compounding,…)
+\[
+y' = r y
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ode-logistic">
+<h3 id="ode-logistic">Logistic Growth</h3>
+<div class="outline-text-3" id="text-ode-logistic">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+In population modelling
+\[
+p' = rp(K-p)
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-solutions">
+<h2 id="solutions"><span class="section-number-2">2.</span> Solutions of ODE's</h2>
+<div class="outline-text-2" id="text-solutions">
+</div>
+<section class="outline-3" id="outline-container-solutions-title">
+<h3 id="solutions-title">Solutions of ODE's</h3>
+<div class="outline-text-3" id="text-solutions-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-solutions-">
+<h3 id="solutions-">Solutions of ODE's</h3>
+<div class="outline-text-3" id="text-solutions-">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A <i>solution</i> of an ode is a function \(f(t)\) that satisfies the ODE for every \(t\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-solution-freefall">
+<h3 id="solution-freefall">Free Fall Under Gravity</h3>
+<div class="outline-text-3" id="text-solution-freefall">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+z = -\frac{gt^2}{2}
+\]
+is a solution of
+\[
+z'' = -g
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-solution-exponential_growth">
+<h3 id="solution-exponential_growth">Exponential Growth/Decay</h3>
+<div class="outline-text-3" id="text-solution-exponential_growth">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+y = e^{3t}
+\]
+is a solution of
+\[
+y' = 3 y
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-solution-logistic">
+<h3 id="solution-logistic">Logistic Growth</h3>
+<div class="outline-text-3" id="text-solution-logistic">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+p = \frac{3}{1 + e^{-15t}}
+\]
+is a solution of
+\[
+p' = 5p(3-p)
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-initial">
+<h2 id="initial"><span class="section-number-2">3.</span> Initial Condition</h2>
+<div class="outline-text-2" id="text-initial">
+</div>
+<section class="outline-3" id="outline-container-initial-title">
+<h3 id="initial-title">Initial Condition</h3>
+<div class="outline-text-3" id="text-initial-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-initial-title">
+<h3 id="initial-title">Initial Condition</h3>
+<div class="outline-text-3" id="text-initial-title">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+ODE's describe how a function changes. To determine solutions we need somewhere to start. The starting values are called <b>initial conditions</b>.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-initial-freefall">
+<h3 id="initial-freefall">Free Fall</h3>
+<div class="outline-text-3" id="text-initial-freefall">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{equation*}
+\begin{cases}
+z'' &amp;= - g \\
+z(0) &amp;= 1 \\
+z'(0) &amp;= 0
+\end{cases}
+\end{equation*}
+
+<p>
+\[
+z(t) = \frac{-gt^2}{2} + 1
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-initial-exponential_growth">
+<h3 id="initial-exponential_growth">Exponential Growth/Decay</h3>
+<div class="outline-text-3" id="text-initial-exponential_growth">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{equation*}
+\begin{cases}
+y' &amp;= 3 y \\
+y(0) &amp;= 4
+\end{cases}
+\end{equation*}
+
+<p>
+\[
+y = 4 e^{3t}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-initial-logistic">
+<h3 id="initial-logistic">Logistic Growth</h3>
+<div class="outline-text-3" id="text-initial-logistic">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{equation*}
+\begin{cases}
+p' &amp;= 5p(3-p) \\
+p(0) &amp;= 1
+\end{cases}
+\end{equation*}
+
+<p>
+\[
+p = \frac{3}{1 + 2e^{-15t}}
+\]
+</p>
+</div>
 </div>
 </section>
 </section>
