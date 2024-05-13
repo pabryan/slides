@@ -15,9 +15,9 @@ week: '06'
 <div class="outline-text-3" id="text-solving_ode-title">
 </div>
 </section>
-<section class="outline-3" id="outline-container-org07ce1a8">
-<h3 id="org07ce1a8">General Solution</h3>
-<div class="outline-text-3" id="text-org07ce1a8">
+<section class="outline-3" id="outline-container-orga9b650e">
+<h3 id="orga9b650e">General Solution</h3>
+<div class="outline-text-3" id="text-orga9b650e">
 <div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
 <p>
 The <b>General Solution</b> includes arbitrary constants and we use the initial conditions to determine the values of these constants.
@@ -57,11 +57,13 @@ y'(t) &amp;= f(t) \\
 <h3 id="ftc-ftc">Example</h3>
 <div class="outline-text-3" id="text-ftc-ftc">
 <div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
-<p>
-\[
-y'(t) = t^2
-\]
-</p>
+\begin{equation*}
+\begin{cases}
+y'(t) &amp;= t^2 \\
+y(1) &amp;= 3
+\end{cases}
+\end{equation*}
+
 </div>
 </div>
 </section>
@@ -117,21 +119,15 @@ y(0) &amp;= 4
 \end{equation*}
 </div>
 </section>
-<section class="outline-3" id="outline-container-separable-logistic">
-<h3 id="separable-logistic">Logistic Growth</h3>
-<div class="outline-text-3" id="text-separable-logistic">
+<section class="outline-3" id="outline-container-separable-example1">
+<h3 id="separable-example1">Example</h3>
+<div class="outline-text-3" id="text-separable-example1">
 \begin{equation*}
 \begin{cases}
-p' &amp;= 5p(3-p) \\
-p(0) &amp;= 1
+y' &amp;= (x^2 - 4)(3y + 2) \\
+y(0) &amp;= -2
 \end{cases}
 \end{equation*}
-
-<p>
-\[
-p(t) = \frac{5}{1 + 4 e^{-15t}}
-\]
-</p>
 </div>
 </section>
 </section>
