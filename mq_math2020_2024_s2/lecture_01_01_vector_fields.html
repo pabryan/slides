@@ -1,0 +1,108 @@
+---
+layout: slides
+lecture: '01'
+name: vector_fields
+title: Vector Fields
+week: '01'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Vector Fields</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Vector Fields</li>
+<li>Gradient Fields</li>
+<li>Potential Functions</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-vector_fields">
+<h2 id="vector_fields"><span class="section-number-2">2.</span> Vector Fields</h2>
+<div class="outline-text-2" id="text-vector_fields">
+</div>
+<section class="outline-3" id="outline-container-vector_fields-title">
+<h3 id="vector_fields-title">Vector Fields</h3>
+<div class="outline-text-3" id="text-vector_fields-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_fields-defn">
+<h3 id="vector_fields-defn">Vector Fields</h3>
+<div class="outline-text-3" id="text-vector_fields-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A vector field is a function
+\[
+F = (F_1, \dots, F_n) : \RR^n \to \RR^n
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_fields-examples">
+<h3 id="vector_fields-examples">Vector Fields Examples</h3>
+<div class="outline-text-3" id="text-vector_fields-examples">
+<ul class="org-ul">
+<li>Position Vector: \(r = F(x, y, z) = (x, y, z)\)</li>
+<li>Rotation Field: \(F(x, y) = (-y, x)\)</li>
+<li>Inverse Square Law: \(F(r) = \frac{C}{r^2} \frac{r}{\abs{r}}\)</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-gradients">
+<h2 id="gradients"><span class="section-number-2">3.</span> Gradient Fields</h2>
+<div class="outline-text-2" id="text-gradients">
+</div>
+<section class="outline-3" id="outline-container-gradients-title">
+<h3 id="gradients-title">Gradient Fields</h3>
+<div class="outline-text-3" id="text-gradients-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-gradients-defn">
+<h3 id="gradients-defn">Gradient Fields</h3>
+<div class="outline-text-3" id="text-gradients-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A vector field of the form \(F(r) = \nabla f (r)\) is called a <i>gradient vector field</i>.
+</p>
+<p>
+Here \(r = (x_1, \dots, x_n)\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-gradients-examples">
+<h3 id="gradients-examples">Gradient Fields Examples</h3>
+<div class="outline-text-3" id="text-gradients-examples">
+<ul class="org-ul">
+<li>\(f(r) = \frac{\abs{r}^2}{2}\)</li>
+<li>\(f(r) = x^2 y^2\)</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-gradients-unique">
+<h3 id="gradients-unique">Uniqueness of Gradient Fields</h3>
+<div class="outline-text-3" id="text-gradients-unique">
+<div class="lem"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(\nabla f = \nabla g\) if and only if \(g(r) = f(r) + C\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-gradients-level_sets">
+<h3 id="gradients-level_sets">Level Sets</h3>
+<div class="outline-text-3" id="text-gradients-level_sets">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(f\) be a function with \(\nabla f \neq 0\). Then \(\nabla f\) is perpendicular to the level sets of \(f\).
+</p>
+</div>
+</div>
+</section>
+</section>

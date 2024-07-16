@@ -1,0 +1,144 @@
+---
+layout: slides
+lecture: '02'
+name: curves
+title: Line Integrals
+week: '01'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Curves</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Regular Curves</li>
+<li>Arc Length</li>
+<li>Scalar Line Integrals</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-regular_curves">
+<h2 id="regular_curves"><span class="section-number-2">2.</span> Regular curves</h2>
+<div class="outline-text-2" id="text-regular_curves">
+</div>
+<section class="outline-3" id="outline-container-regular_curves-title">
+<h3 id="regular_curves-title">Regular Curves</h3>
+<div class="outline-text-3" id="text-regular_curves-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-regular_curves-defn">
+<h3 id="regular_curves-defn">Regular Curves</h3>
+<div class="outline-text-3" id="text-regular_curves-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A \(C^1\) <i>regular, parametrised curve</i> is a \(C^1\) function
+\[
+c(t) = (x_1(t), \dots, x_n(t))
+\]
+with \(c'(t) \neq 0\) and \(t \in (a, b)\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-regular_curves-examples">
+<h3 id="regular_curves-examples">Examples</h3>
+<div class="outline-text-3" id="text-regular_curves-examples">
+<ul class="org-ul">
+<li><b>Circle</b>: \(\vec{c}(t) = (\cos(t), \sin(t))\), \(0 \leq t \leq 2\pi\)</li>
+<li><b>Helix</b>: \(\vec{c}(t) = (\cos(t), \sin(t), t)\), \(t \in \mathbb{R}\)</li>
+<li><b>Parabola</b>: \(\vec{c}(t) = (t, t^2)\), \(t \in \mathbb{R}\)</li>
+<li><b>Cardiod</b>: \(\vec{c}(t) = \big((1-\cos(t))\cos(t), (1-\cos(t))\sin(t)\big)\)</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-arc_length">
+<h2 id="arc_length"><span class="section-number-2">3.</span> Arc Length</h2>
+<div class="outline-text-2" id="text-arc_length">
+</div>
+<section class="outline-3" id="outline-container-arc_length-title">
+<h3 id="arc_length-title">Arc Length</h3>
+<div class="outline-text-3" id="text-arc_length-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-arc_length-defn">
+<h3 id="arc_length-defn">Arc Length</h3>
+<div class="outline-text-3" id="text-arc_length-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The length, \(L\) (or arc length) of a \(C^1\) regular, parametrised curve \({c : [a, b] \to \RR^n}\) is
+\[
+L = \int_C ds =  \int_a^b \abs{c'(t)} dt
+\]
+where \(ds = \abs{c'(t)} dt\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-arc_length-motivation">
+<h3 id="arc_length-motivation">Arc Length Motivation</h3>
+<div class="outline-text-3" id="text-arc_length-motivation">
+<p>
+Partition \([a, b]\) as \(a = t_0 &lt; t_1 \cdots &lt; t_{n-1} &lt; t_n = b\).
+</p>
+
+\begin{align*}
+L &amp;\simeq \sum_{i=1}^n \abs{c(t_i) - c(t_{i-1})} \\
+&amp;= \sum_{i=1}^n \abs{\frac{c(t_i) - c(t_{i-1})}{t_i - t_{i-1}}} (t_i - t_{i-1}) \\
+&amp;= \sum_{i=1}^n \abs{\frac{\Delta c}{\Delta t}} \Delta t \to \int_a^b \abs{c'(t)} dt \text{ as } n \to \infty.
+\end{align*}
+</div>
+</section>
+<section class="outline-3" id="outline-container-arc_length-examples">
+<h3 id="arc_length-examples">Arc Length Examples</h3>
+<div class="outline-text-3" id="text-arc_length-examples">
+<ul class="org-ul">
+<li>Straight line: \(c(t) = p + t V\)</li>
+<li>Circle: \(c(t) = (R \cos t, R \sin t)\)</li>
+<li>Parabola: \(c(t) = (t, t^2)\)</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-scalar_integrals">
+<h2 id="scalar_integrals"><span class="section-number-2">4.</span> Scalar Line Integrals</h2>
+<div class="outline-text-2" id="text-scalar_integrals">
+</div>
+<section class="outline-3" id="outline-container-scalar_integrals-title">
+<h3 id="scalar_integrals-title">Scalar Line Integrals</h3>
+<div class="outline-text-3" id="text-scalar_integrals-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-scalar_integrals-defn">
+<h3 id="scalar_integrals-defn">Scalar Line Integrals</h3>
+<div class="outline-text-3" id="text-scalar_integrals-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The integral of \(f\) along \(C\) is
+\[
+\int_C f ds =  \int_a^b f(c(t)) \abs{c'(t)} dt
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-scalar_integrals-examples">
+<h3 id="scalar_integrals-examples">Scalar Line Examples</h3>
+<div class="outline-text-3" id="text-scalar_integrals-examples">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+c(t) = (\cos t, \sin t, t)
+\]
+\[
+f(x, y, z) = x^2 + y^2 + z^2.
+\]
+</p>
+</div>
+</div>
+</section>
+</section>
