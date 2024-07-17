@@ -1,0 +1,157 @@
+---
+layout: slides
+lecture: '01'
+name: greens_theorem
+title: Green's Theorem
+week: '03'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Green's Theorem</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Green's Theorem</li>
+<li>Proof on a Rectangle</li>
+<li>General Domains</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-greens_theorem">
+<h2 id="greens_theorem"><span class="section-number-2">2.</span> Green's Theorem</h2>
+<div class="outline-text-2" id="text-greens_theorem">
+</div>
+<section class="outline-3" id="outline-container-greens_theorem-title">
+<h3 id="greens_theorem-title">Green's Theorem</h3>
+<div class="outline-text-3" id="text-greens_theorem-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens_theorem-greens_theorem">
+<h3 id="greens_theorem-greens_theorem">Green's Theorem</h3>
+<div class="outline-text-3" id="text-greens_theorem-greens_theorem">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(D \subseteq \RR^2\) be an open set with boundary \(C\) a piecewise smooth, simple, closed curve. Let \(F = (P, Q)\) be a \(C^1\) vector field. Then
+\[
+\oint_C P dx + Q dy = \iint_{D} \partial_x Q - \partial_y P dA
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens_theorem-eg1">
+<h3 id="greens_theorem-eg1">Example</h3>
+<div class="outline-text-3" id="text-greens_theorem-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\oint_{C} 2y dx + 5x dy = \iint_D 5 - 2 dA
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens_theorem-eg2">
+<h3 id="greens_theorem-eg2">Example</h3>
+<div class="outline-text-3" id="text-greens_theorem-eg2">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Evaluate
+\[
+\iint_{D} x^2 + y^2 dA
+\]
+where \(D\) is the region inside the disc, \(D_2\) of radius \(2\) centred on the origin and outside the disc, \(D_1\) of radius \(1\) centred on the origin.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens_theorem-ellipse">
+<h3 id="greens_theorem-ellipse">Area of an Ellipse</h3>
+<div class="outline-text-3" id="text-greens_theorem-ellipse">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\text{Area}(E) = \iint_E dA = \frac{1}{2} \int_C xdy - ydx
+\]
+</p>
+<p>
+\[
+\vecna{c}(t) = (a \cos t, b \sin t) \quad 0 \leq t \leq 2\pi
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-proof_rectangle">
+<h2 id="proof_rectangle"><span class="section-number-2">3.</span> Proof on a Rectangle</h2>
+<div class="outline-text-2" id="text-proof_rectangle">
+</div>
+<section class="outline-3" id="outline-container-proof_rectangle-title">
+<h3 id="proof_rectangle-title">Proof on a Rectangle</h3>
+<div class="outline-text-3" id="text-proof_rectangle-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-proof_rectangle-proof1">
+<h3 id="proof_rectangle-proof1">Proof on a Rectangle</h3>
+<div class="outline-text-3" id="text-proof_rectangle-proof1">
+<div class="pf"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(R\) be a rectangle with horizontal sides \(H_1, H_2\) and vertical sides \(V_1, V_2\)
+</p>
+
+\begin{align*}
+\oint_C \vec{F} \cdot \vec{T} ds &amp;= \int_{H_1} \vec{F} \cdot \vec{T} ds - \int_{H_2} \vec{F} \cdot \vec{T} ds \\
+&amp;= \int_{V_1} \vec{F} \cdot \vec{T} ds - \int_{V_2} \vec{F} \cdot \vec{T} ds \\
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-proof_rectangle-proof2">
+<h3 id="proof_rectangle-proof2">Proof on a Rectangle</h3>
+<div class="outline-text-3" id="text-proof_rectangle-proof2">
+<div class="pf"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>On \(H_1, H_2\) : \(\vec{T} = \vec{e_1}\) and \(\vec{F} \cdot \vec{T} = P\)</li>
+<li>On \(V_1, V_2\) : \(\vec{T} = \vec{e_2}\) and \(\vec{F} \cdot \vec{T} = Q\)</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-proof_rectangle-proof2">
+<h3 id="proof_rectangle-proof2">Proof on a Rectangle</h3>
+<div class="outline-text-3" id="text-proof_rectangle-proof2">
+<div class="pf"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+-\int_a^b P(x, d) - P(x, c) dx &amp;= -\int_a^b \int_c^d \partial_y P(x, y) dy dx \\
+\int_c^d Q(b, y) - P(a, y) dy &amp;= \int_c^d \int_a^b \partial_x Q(x, y) dx dy
+\end{align*}
+
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-general_domains">
+<h2 id="general_domains"><span class="section-number-2">4.</span> General Domains</h2>
+<div class="outline-text-2" id="text-general_domains">
+</div>
+<section class="outline-3" id="outline-container-general_domains-title">
+<h3 id="general_domains-title">General Domains</h3>
+<div class="outline-text-3" id="text-general_domains-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-general_domains-idea">
+<h3 id="general_domains-idea">General Domains</h3>
+<div class="outline-text-3" id="text-general_domains-idea">
+<ul class="org-ul">
+<li>Break up the domain into rectangles</li>
+<li>Inner line integrals cancel</li>
+</ul>
+</div>
+</section>
+</section>
