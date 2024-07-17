@@ -1,0 +1,180 @@
+---
+layout: slides
+lecture: '01'
+name: vector_line_integrals
+title: Vector Line Integrals
+week: '02'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Vector Line Integrals</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Vector Line Integrals</li>
+<li>FTC for Gradients</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-vector_line_integrals">
+<h2 id="vector_line_integrals"><span class="section-number-2">2.</span> Vector Line Integrals</h2>
+<div class="outline-text-2" id="text-vector_line_integrals">
+</div>
+<section class="outline-3" id="outline-container-vector_line_integrals-title">
+<h3 id="vector_line_integrals-title">Vector Line Integrals</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_line_integrals-work">
+<h3 id="vector_line_integrals-work">Work</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-work">
+<p>
+\[
+W = F \cdot V
+\]
+</p>
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_line_integrals-work_curve">
+<h3 id="vector_line_integrals-work_curve">Work Along a Curve</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-work_curve">
+<p>
+\[
+W = \int_C \vec{F} \cdot \vec{T} ds = \int_a^b \vec{F}(\vecna{c}(t)) \cdot \vecna{c}'(t) dt
+\]
+</p>
+<p>
+\[
+ds = \abs{\vecna{c}'}, \quad \vec{T} = \frac{\vecna{c}'}{\abs{\vecna{c}'}}
+\]
+</p>
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_line_integrals-2d_notation">
+<h3 id="vector_line_integrals-2d_notation">2d Notation</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-2d_notation">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+For \(\vec{F} = (P, Q)\) and \(c(t) = (x(t), y(t))\)
+</p>
+\begin{align*}
+\int_{C} \vec{F} \cdot \vec{T} ds &amp;= \int_a^b P \frac{dx}{dt} dt + Q \frac{dy}{dt} dt \\
+&amp;= \int_C P dx + Q dy.
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_line_integrals-3d_notation">
+<h3 id="vector_line_integrals-3d_notation">3d Notation</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-3d_notation">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+For \(\vec{F} = (P, Q, R)\) and \(c = (x(t), y(t), z(t))\)
+</p>
+\begin{align*}
+\int_{C} \vec{F} \cdot \vec{T} ds &amp;= \int_a^b P \frac{dx}{dt} dt + Q \frac{dy}{dt} dt + R \frac{dz}{dt} dt \\
+&amp;= \int_C P dx + Q dy + Rdz.
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_line_integrals-example">
+<h3 id="vector_line_integrals-example">Example</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-example">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int_{C} x dx + y dy + z dz
+\]
+along \(\vecna{c}(t) = (\sin t, \cos t, t)\), \(0 \leq t \leq 2\pi\).
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-ftc_gradients">
+<h2 id="ftc_gradients"><span class="section-number-2">3.</span> FTC for Gradients</h2>
+<div class="outline-text-2" id="text-ftc_gradients">
+</div>
+<section class="outline-3" id="outline-container-ftc_gradients-title">
+<h3 id="ftc_gradients-title">FTC for Gradients</h3>
+<div class="outline-text-3" id="text-ftc_gradients-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-ftc">
+<h3 id="ftc_gradients-ftc">FTC for Gradients</h3>
+<div class="outline-text-3" id="text-ftc_gradients-ftc">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int_{C} \nabla f \cdot \vec{T} ds = f(\vecna{c}(b)) - f(\vecna{c}(a))
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-eg1">
+<h3 id="ftc_gradients-eg1">Example</h3>
+<div class="outline-text-3" id="text-ftc_gradients-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(\vecna{c}(t) = \big(t^2/4, \sin^3(t\pi/2)\big)\), \(t \in [0, 1]\)</li>
+<li>\(f(x, y) = xy\)</li>
+</ul>
+<p>
+\[
+\int_{C} ydx + xdy = \frac{1}{4}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-conservative">
+<h3 id="ftc_gradients-conservative">Conservative Vector Fields</h3>
+<div class="outline-text-3" id="text-ftc_gradients-conservative">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A vector field is conservative if the work done around a closed loop is zero.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-conservative_lem">
+<h3 id="ftc_gradients-conservative_lem">Conservative Vector Fields</h3>
+<div class="outline-text-3" id="text-ftc_gradients-conservative_lem">
+<div class="lem"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The following conditions are equivalent:
+</p>
+<ol class="org-ol">
+<li>\(F\) is conservative</li>
+<li>\(F = \nabla f\) for some scalar field \(f\)</li>
+<li>The work done by \(F\) along a path joining points \(p\) and \(q\) is independent of the path taken</li>
+</ol>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-inverse_square">
+<h3 id="ftc_gradients-inverse_square">Inverse square law</h3>
+<div class="outline-text-3" id="text-ftc_gradients-inverse_square">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\vec{F}(x, y) = \frac{1}{(x^2 + y^2)^{3/2}} (x, y), \quad (x, y) \ne (0, 0)
+\]
+</p>
+<p>
+\[
+\vec{F} = \nabla \left(\frac{-1}{\sqrt{x^2 + y^2}}\right)
+\]
+</p>
+</div>
+</div>
+</section>
+</section>

@@ -1,0 +1,165 @@
+---
+layout: slides
+lecture: '02'
+name: potentials
+title: Potential Functions
+week: '02'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Potential Functions</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Test for gradients</li>
+<li>Simply connected domains</li>
+<li>Determining potential functions</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-test_gradient">
+<h2 id="test_gradient"><span class="section-number-2">2.</span> Test for Gradients</h2>
+<div class="outline-text-2" id="text-test_gradient">
+</div>
+<section class="outline-3" id="outline-container-test_gradient-title">
+<h3 id="test_gradient-title">Test for Gradients</h3>
+<div class="outline-text-3" id="text-test_gradient-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-test_gradient-test">
+<h3 id="test_gradient-test">Test for Gradients</h3>
+<div class="outline-text-3" id="text-test_gradient-test">
+<div class="lem"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(F = (P, Q) = \nabla f = (\partial_x f, \partial_y f)\) satisfies
+\[
+\partial_y P = \partial_x Q
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-test_gradient-eg1">
+<h3 id="test_gradient-eg1">Example</h3>
+<div class="outline-text-3" id="text-test_gradient-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+F = (2x e^{x^2 - y}, - e^{x^2 - y})
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-test_gradient-eg2">
+<h3 id="test_gradient-eg2">Example</h3>
+<div class="outline-text-3" id="text-test_gradient-eg2">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+F = (\cos y, x^2)
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-simply_connected">
+<h2 id="simply_connected"><span class="section-number-2">3.</span> Simply Connected Domains</h2>
+<div class="outline-text-2" id="text-simply_connected">
+</div>
+<section class="outline-3" id="outline-container-simply_connected-title">
+<h3 id="simply_connected-title">Simply Connected Domains</h3>
+<div class="outline-text-3" id="text-simply_connected-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-simply_connected-&lt;slide&gt;">
+<h3 id="simply_connected-&lt;slide&gt;">Simply Connected Domains</h3>
+<div class="outline-text-3" id="text-simply_connected-&lt;slide&gt;">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A <b>simply connected domain</b> is a connected open set with no holes.
+</p>
+</div>
+<ul class="org-ul">
+<li>Disc - simply connected</li>
+<li>Annulus - not simply connected</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-simply_connected-vector_fields">
+<h3 id="simply_connected-vector_fields">Vector Fields on Simply Connected Domains</h3>
+<div class="outline-text-3" id="text-simply_connected-vector_fields">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(F = (P, Q)\) be a vector field on a simply connected domain. Then \(F\) is a gradient field if and only \(\partial_y P = \partial_x Q\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-simply_connected-eg1">
+<h3 id="simply_connected-eg1">Example</h3>
+<div class="outline-text-3" id="text-simply_connected-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+F = (P, Q) = \frac{1}{x^2 + y^2} \left(-y, x\right), \quad (x, y) \neq (0, 0)
+\]
+</p>
+<ul class="org-ul">
+<li>\(\partial_y P = \partial_x Q\)</li>
+<li>Not a gradient</li>
+</ul>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-potentials">
+<h2 id="potentials"><span class="section-number-2">4.</span> Potential Functions</h2>
+<div class="outline-text-2" id="text-potentials">
+</div>
+<section class="outline-3" id="outline-container-potentials-title">
+<h3 id="potentials-title">Potential Functions</h3>
+<div class="outline-text-3" id="text-potentials-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-potentials-determining">
+<h3 id="potentials-determining">Determining Potential Functions</h3>
+<div class="outline-text-3" id="text-potentials-determining">
+<ul class="org-ul">
+<li>\(\partial_y P = \partial_x Q\)</li>
+<li>Solve \(\nabla f= (\partial_x f, \partial_y f) = (P, Q)\)</li>
+<li>\(\partial_x f = P \Rightarrow f = \int P dx + h(y)\)</li>
+<li>\(\partial_y f = Q \Rightarrow \partial_y \int P dx + \partial_y h = Q\)</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-potentials-eg1">
+<h3 id="potentials-eg1">Example</h3>
+<div class="outline-text-3" id="text-potentials-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+F(x, y) = (2xy, x^2 + e^y)
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-potentials-eg1">
+<h3 id="potentials-eg1">Example</h3>
+<div class="outline-text-3" id="text-potentials-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+F(x, y) = (2xy, x^2 + x e^y)
+\]
+</p>
+</div>
+</div>
+</section>
+</section>
