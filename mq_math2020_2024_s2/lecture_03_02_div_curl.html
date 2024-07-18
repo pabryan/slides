@@ -1,0 +1,170 @@
+---
+layout: slides
+lecture: '02'
+name: div_curl
+title: Divergence and Curl
+week: '03'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Divergence and Curl</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Divergence</li>
+<li>Curl</li>
+<li>Green's Theorem</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-divergence">
+<h2 id="divergence"><span class="section-number-2">2.</span> Divergence</h2>
+<div class="outline-text-2" id="text-divergence">
+</div>
+<section class="outline-3" id="outline-container-divergence-title">
+<h3 id="divergence-title">Divergence</h3>
+<div class="outline-text-3" id="text-divergence-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-divergence-defn">
+<h3 id="divergence-defn">Divergence</h3>
+<div class="outline-text-3" id="text-divergence-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <b>divergence</b> of a vector field \(\vec{F}\) is the <i>scalar</i> field
+</p>
+\begin{align*}
+\divg \vec{F} &amp;= \nabla \cdot \vec{F} \\
+&amp;= \partial_{x_1} F_1 + \dots + \partial_{x_n} F_n
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-divergence-eg1">
+<h3 id="divergence-eg1">Examples</h3>
+<div class="outline-text-3" id="text-divergence-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+\divg \left(x\vec{e}_1 + y \vec{e}_2\right) &amp;= 2 \\
+\divg \left(x\vec{e}_1 - y \vec{e}_2\right) &amp;= 0 \\
+\divg \left(\vec{e}_1 + \vec{e}_2\right) &amp;= 0 \\
+\end{align*}
+
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-curl">
+<h2 id="curl"><span class="section-number-2">3.</span> Curl</h2>
+<div class="outline-text-2" id="text-curl">
+</div>
+<section class="outline-3" id="outline-container-curl-title">
+<h3 id="curl-title">Curl</h3>
+<div class="outline-text-3" id="text-curl-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-curl-defn">
+<h3 id="curl-defn">Curl</h3>
+<div class="outline-text-3" id="text-curl-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <b>curl</b> of \(F = (P, Q, R)\) is the <i>vector</i> field
+</p>
+\begin{align*}
+\curl F &amp;= \nabla \times F \\
+&amp;= \left(\partial_y R - \partial_z Q\right) \vec{e}_1 \\
+&amp;\quad - \left(\partial_x R - \partial_z P\right) \vec{e}_2 \\
+&amp;\quad + \left(\partial_x Q - \partial_y P\right) \vec{e}_3
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-curl-eg1">
+<h3 id="curl-eg1">Curl</h3>
+<div class="outline-text-3" id="text-curl-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+F = (x^2z, e^y + xz, xyz)
+\]
+</p>
+<p>
+\[
+\curl F = (xz - x)\vec{e}_1  + (x^2 - yx) \vec{e}_2 + z \vec{e}_3
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-greens">
+<h2 id="greens"><span class="section-number-2">4.</span> Green's Theorem</h2>
+<div class="outline-text-2" id="text-greens">
+</div>
+<section class="outline-3" id="outline-container-greens-title">
+<h3 id="greens-title">Green's Theorem</h3>
+<div class="outline-text-3" id="text-greens-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens-2dcurl">
+<h3 id="greens-2dcurl">2d Curl</h3>
+<div class="outline-text-3" id="text-greens-2dcurl">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+For \(\vec{F} = (P, Q)\), the \(2\)-d curl is the <i>scalar</i> field
+\[
+\curl_2 \vec{F} = \partial_x Q - \partial_y P
+\]
+</p>
+</div>
+<ul class="org-ul">
+<li>\(\curl_2 (P, Q) = \curl (P, Q, 0) \cdot \vec{e}_3\)</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens_curl">
+<h3 id="greens_curl">Green's Theorem: Curl Form</h3>
+<div class="outline-text-3" id="text-greens_curl">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int_C \vec{F} \cdot \vec{T} ds = \iint_D \curl_2 F dA
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens_div">
+<h3 id="greens_div">Green's Theorem: Div Form</h3>
+<div class="outline-text-3" id="text-greens_div">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int_C \vec{F} \cdot \vec{N} ds = \iint_D \divg \vec{F} dA
+\]
+</p>
+</div>
+<ul class="org-ul">
+<li>\(C\) is oriented counter-clockwise and \(\vec{N}\) is the unit outer normal.</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-greens_eg1">
+<h3 id="greens_eg1">Example</h3>
+<div class="outline-text-3" id="text-greens_eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\vec{F} = (x^3, y^3), \quad C = (\cos t, \sin t) \quad 0 \leq t \leq 2\pi
+\]
+</p>
+</div>
+</div>
+</section>
+</section>
