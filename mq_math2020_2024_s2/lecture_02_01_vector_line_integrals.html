@@ -11,17 +11,56 @@ week: '02'
 <div class="outline-text-2" id="text-contents">
 </div>
 <section class="outline-3" id="outline-container-contents-contents">
-<h3 id="contents-contents">Vector Line Integrals</h3>
+<h3 id="contents-contents">Line Integrals</h3>
 <div class="outline-text-3" id="text-contents-contents">
 <ul class="org-ul">
+<li>Scalar Line Integrals</li>
 <li>Vector Line Integrals</li>
 <li>FTC for Gradients</li>
 </ul>
 </div>
 </section>
 </section> 
+ <section class="outline-2" id="outline-container-scalar_integrals">
+<h2 id="scalar_integrals"><span class="section-number-2">2.</span> Scalar Line Integrals</h2>
+<div class="outline-text-2" id="text-scalar_integrals">
+</div>
+<section class="outline-3" id="outline-container-scalar_integrals-title">
+<h3 id="scalar_integrals-title">Scalar Line Integrals</h3>
+<div class="outline-text-3" id="text-scalar_integrals-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-scalar_integrals-defn">
+<h3 id="scalar_integrals-defn">Scalar Line Integrals</h3>
+<div class="outline-text-3" id="text-scalar_integrals-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The integral of \(f\) along \(C\) is
+\[
+\int_C f ds =  \int_a^b f(\vecna{c}(t)) \abs{\vecna{c}'(t)} dt
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-scalar_integrals-examples">
+<h3 id="scalar_integrals-examples">Scalar Line Examples</h3>
+<div class="outline-text-3" id="text-scalar_integrals-examples">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\vecna{c}(t) = (\cos t, \sin t, t)
+\]
+\[
+f(x, y, z) = x^2 + y^2 + z^2
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
  <section class="outline-2" id="outline-container-vector_line_integrals">
-<h2 id="vector_line_integrals"><span class="section-number-2">2.</span> Vector Line Integrals</h2>
+<h2 id="vector_line_integrals"><span class="section-number-2">3.</span> Vector Line Integrals</h2>
 <div class="outline-text-2" id="text-vector_line_integrals">
 </div>
 <section class="outline-3" id="outline-container-vector_line_integrals-title">
@@ -49,9 +88,24 @@ W = \int_C \vec{F} \cdot \vec{T} ds = \int_a^b \vec{F}(\vecna{c}(t)) \cdot \vecn
 </p>
 <p>
 \[
-ds = \abs{\vecna{c}'}, \quad \vec{T} = \frac{\vecna{c}'}{\abs{\vecna{c}'}}
+ds = \abs{\vecna{c}'}dt \quad \vec{T} = \frac{\vecna{c}'}{\abs{\vecna{c}'}}
 \]
 </p>
+</div>
+</section>
+<section class="outline-3" id="outline-container-vector_line_integrals-example1">
+<h3 id="vector_line_integrals-example1">Example</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-example1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate \(\int_C \vec{F} \cdot \vec{T} ds\) where
+</p>
+<p>
+\[
+\vec{F} (x, y) = (xy, x + y^2) \quad \vecna{c}(t) = (t, t^2), 0 \leq t \leq 1
+\]
+</p>
+</div>
 </div>
 </section>
 <section class="outline-3" id="outline-container-vector_line_integrals-2d_notation">
@@ -84,9 +138,9 @@ For \(\vec{F} = (P, Q, R)\) and \(c = (x(t), y(t), z(t))\)
 </div>
 </div>
 </section>
-<section class="outline-3" id="outline-container-vector_line_integrals-example">
-<h3 id="vector_line_integrals-example">Example</h3>
-<div class="outline-text-3" id="text-vector_line_integrals-example">
+<section class="outline-3" id="outline-container-vector_line_integrals-example2">
+<h3 id="vector_line_integrals-example2">Example</h3>
+<div class="outline-text-3" id="text-vector_line_integrals-example2">
 <div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
 <p>
 \[
@@ -99,7 +153,7 @@ along \(\vecna{c}(t) = (\sin t, \cos t, t)\), \(0 \leq t \leq 2\pi\).
 </section>
 </section> 
  <section class="outline-2" id="outline-container-ftc_gradients">
-<h2 id="ftc_gradients"><span class="section-number-2">3.</span> FTC for Gradients</h2>
+<h2 id="ftc_gradients"><span class="section-number-2">4.</span> FTC for Gradients</h2>
 <div class="outline-text-2" id="text-ftc_gradients">
 </div>
 <section class="outline-3" id="outline-container-ftc_gradients-title">
@@ -124,7 +178,7 @@ along \(\vecna{c}(t) = (\sin t, \cos t, t)\), \(0 \leq t \leq 2\pi\).
 <div class="outline-text-3" id="text-ftc_gradients-eg1">
 <div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
 <ul class="org-ul">
-<li>\(\vecna{c}(t) = \big(t^2/4, \sin^3(t\pi/2)\big)\), \(t \in [0, 1]\)</li>
+<li>\(\vecna{c}(t) = \big(t^2/4, \sin^3(t\pi/2)\big)\) \(t \in [0, 1]\)</li>
 <li>\(f(x, y) = xy\)</li>
 </ul>
 <p>
