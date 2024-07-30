@@ -1,8 +1,8 @@
 ---
 layout: slides
 lecture: '02'
-name: potentials
-title: Potential Functions
+name: gradients
+title: Gradient Line Integrals
 week: '02'
 ---
 
@@ -14,6 +14,7 @@ week: '02'
 <h3 id="contents-contents">Potential Functions</h3>
 <div class="outline-text-3" id="text-contents-contents">
 <ul class="org-ul">
+<li>FTC for Gradients</li>
 <li>Test for gradients</li>
 <li>Simply connected domains</li>
 <li>Determining potential functions</li>
@@ -21,8 +22,88 @@ week: '02'
 </div>
 </section>
 </section> 
+ <section class="outline-2" id="outline-container-ftc_gradients">
+<h2 id="ftc_gradients"><span class="section-number-2">2.</span> FTC for Gradients</h2>
+<div class="outline-text-2" id="text-ftc_gradients">
+</div>
+<section class="outline-3" id="outline-container-ftc_gradients-title">
+<h3 id="ftc_gradients-title">FTC for Gradients</h3>
+<div class="outline-text-3" id="text-ftc_gradients-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-ftc">
+<h3 id="ftc_gradients-ftc">FTC for Gradients</h3>
+<div class="outline-text-3" id="text-ftc_gradients-ftc">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\int_{C} \nabla f \cdot \vec{T} ds = f(\vecna{c}(b)) - f(\vecna{c}(a))
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-eg1">
+<h3 id="ftc_gradients-eg1">Example</h3>
+<div class="outline-text-3" id="text-ftc_gradients-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(\vecna{c}(t) = \big(t^2/4, \sin^3(t\pi/2)\big)\) \(t \in [0, 1]\)</li>
+<li>\(f(x, y) = xy\)</li>
+</ul>
+<p>
+\[
+\int_{C} ydx + xdy = \frac{1}{4}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-conservative">
+<h3 id="ftc_gradients-conservative">Conservative Vector Fields</h3>
+<div class="outline-text-3" id="text-ftc_gradients-conservative">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A vector field is conservative if the work done around a closed loop is zero.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-conservative_lem">
+<h3 id="ftc_gradients-conservative_lem">Conservative Vector Fields</h3>
+<div class="outline-text-3" id="text-ftc_gradients-conservative_lem">
+<div class="lem"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The following conditions are equivalent:
+</p>
+<ol class="org-ol">
+<li>\(F\) is conservative</li>
+<li>\(F = \nabla f\) for some scalar field \(f\)</li>
+<li>The work done by \(F\) along a path joining points \(p\) and \(q\) is independent of the path taken</li>
+</ol>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-ftc_gradients-inverse_square">
+<h3 id="ftc_gradients-inverse_square">Inverse square law</h3>
+<div class="outline-text-3" id="text-ftc_gradients-inverse_square">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\vec{F}(x, y) = \frac{1}{(x^2 + y^2)^{3/2}} (x, y), \quad (x, y) \ne (0, 0)
+\]
+</p>
+<p>
+\[
+\vec{F} = \nabla \left(\frac{-1}{\sqrt{x^2 + y^2}}\right)
+\]
+</p>
+</div>
+</div>
+</section>
+</section> 
  <section class="outline-2" id="outline-container-test_gradient">
-<h2 id="test_gradient"><span class="section-number-2">2.</span> Test for Gradients</h2>
+<h2 id="test_gradient"><span class="section-number-2">3.</span> Test for Gradients</h2>
 <div class="outline-text-2" id="text-test_gradient">
 </div>
 <section class="outline-3" id="outline-container-test_gradient-title">
@@ -69,7 +150,7 @@ F = (\cos y, x^2)
 </section>
 </section> 
  <section class="outline-2" id="outline-container-simply_connected">
-<h2 id="simply_connected"><span class="section-number-2">3.</span> Simply Connected Domains</h2>
+<h2 id="simply_connected"><span class="section-number-2">4.</span> Simply Connected Domains</h2>
 <div class="outline-text-2" id="text-simply_connected">
 </div>
 <section class="outline-3" id="outline-container-simply_connected-title">
@@ -119,7 +200,7 @@ F = (P, Q) = \frac{1}{x^2 + y^2} \left(-y, x\right), \quad (x, y) \neq (0, 0)
 </section>
 </section> 
  <section class="outline-2" id="outline-container-potentials">
-<h2 id="potentials"><span class="section-number-2">4.</span> Potential Functions</h2>
+<h2 id="potentials"><span class="section-number-2">5.</span> Potential Functions</h2>
 <div class="outline-text-2" id="text-potentials">
 </div>
 <section class="outline-3" id="outline-container-potentials-title">

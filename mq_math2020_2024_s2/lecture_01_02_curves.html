@@ -17,7 +17,6 @@ week: '01'
 <li>Regular Curves</li>
 <li>Tangent Line</li>
 <li>Arc Length</li>
-<li>Scalar Line Integrals</li>
 </ul>
 </div>
 </section>
@@ -124,9 +123,9 @@ L(u) = (1, 0) + u(0, 1) = (1, u)
 <div class="outline-text-3" id="text-arc_length-defn">
 <div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
 <p>
-The length, \(L\) (or arc length) of a \(C^1\) regular, parametrised curve \({\vecna{c} : [a, b] \to \RR^n}\) is
+The length, \(\arclen\) (or arc length) of a \(C^1\) regular, parametrised curve \({\vecna{c} : [a, b] \to \RR^n}\) is
 \[
-L = \int_C ds =  \int_a^b \abs{\vecna{c}'(t)} dt
+\arclen = \int_C ds =  \int_a^b \abs{\vecna{c}'(t)} dt
 \]
 where \(ds = \abs{\vecna{c'}(t)} dt\).
 </p>
@@ -141,7 +140,7 @@ Partition \([a, b]\) as \(a = t_0 &lt; t_1 \cdots &lt; t_{n-1} &lt; t_n = b\).
 </p>
 
 \begin{align*}
-L &amp;\simeq \sum_{i=1}^n \abs{\vecna{c}(t_i) - \vecna{c}(t_{i-1})} \\
+\arclen &amp;\simeq \sum_{i=1}^n \abs{\vecna{c}(t_i) - \vecna{c}(t_{i-1})} \\
 &amp;= \sum_{i=1}^n \abs{\frac{\vecna{c}(t_i) - \vecna{c}(t_{i-1})}{t_i - t_{i-1}}} (t_i - t_{i-1}) \\
 &amp;= \sum_{i=1}^n \abs{\frac{\Delta \vecna{c}}{\Delta t}} \Delta t \to \int_a^b \abs{\vecna{c}'(t)} dt \text{ as } n \to \infty.
 \end{align*}
@@ -155,44 +154,6 @@ L &amp;\simeq \sum_{i=1}^n \abs{\vecna{c}(t_i) - \vecna{c}(t_{i-1})} \\
 <li>Circle: \(\vecna{c}(t) = (R \cos t, R \sin t)\)</li>
 <li>Parabola: \(\vecna{c}(t) = (t, t^2)\)</li>
 </ul>
-</div>
-</section>
-</section> 
- <section class="outline-2" id="outline-container-scalar_integrals">
-<h2 id="scalar_integrals"><span class="section-number-2">5.</span> Scalar Line Integrals</h2>
-<div class="outline-text-2" id="text-scalar_integrals">
-</div>
-<section class="outline-3" id="outline-container-scalar_integrals-title">
-<h3 id="scalar_integrals-title">Scalar Line Integrals</h3>
-<div class="outline-text-3" id="text-scalar_integrals-title">
-</div>
-</section>
-<section class="outline-3" id="outline-container-scalar_integrals-defn">
-<h3 id="scalar_integrals-defn">Scalar Line Integrals</h3>
-<div class="outline-text-3" id="text-scalar_integrals-defn">
-<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
-<p>
-The integral of \(f\) along \(C\) is
-\[
-\int_C f ds =  \int_a^b f(\vecna{c}(t)) \abs{\vecna{c}'(t)} dt
-\]
-</p>
-</div>
-</div>
-</section>
-<section class="outline-3" id="outline-container-scalar_integrals-examples">
-<h3 id="scalar_integrals-examples">Scalar Line Examples</h3>
-<div class="outline-text-3" id="text-scalar_integrals-examples">
-<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
-<p>
-\[
-\vecna{c}(t) = (\cos t, \sin t, t)
-\]
-\[
-f(x, y, z) = x^2 + y^2 + z^2
-\]
-</p>
-</div>
 </div>
 </section>
 </section>
