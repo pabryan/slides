@@ -1,0 +1,155 @@
+---
+layout: slides
+lecture: '01'
+name: surfaces
+title: Regular Parametrised Surfaces
+week: '04'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Regular Parametrised Surfaces</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Regular Parametrised Surfaces</li>
+<li>Examples</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-surfaces">
+<h2 id="surfaces"><span class="section-number-2">2.</span> Regular Parametrised Surfaces</h2>
+<div class="outline-text-2" id="text-surfaces">
+</div>
+<section class="outline-3" id="outline-container-surfaces-title">
+<h3 id="surfaces-title">Regular Parametrised Surfaces</h3>
+<div class="outline-text-3" id="text-surfaces-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-surfaces-parametrisation">
+<h3 id="surfaces-parametrisation">Regular Parametrision</h3>
+<div class="outline-text-3" id="text-surfaces-parametrisation">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A <i>regular parametrisation</i> for a surface is a \(C^1\) map,
+\[
+\vec{r}(u, v) = \big(x(u, v), y(u, v), z(u, v)\big)
+\]
+such that the differential \(d\vec{r}\) is injective.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-surfaces-parametrisation_remarks">
+<h3 id="surfaces-parametrisation_remarks">Regular Parametrision</h3>
+<div class="outline-text-3" id="text-surfaces-parametrisation_remarks">
+<ul class="org-ul">
+<li>Domain: \((u, v) \in U\) an open set of \(\RR^2\)</li>
+<li>Injectivity: columns \(\partial_u \vec{r}, \partial_v \vec{r}\) linearly independent</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-surfaces-regular_surface">
+<h3 id="surfaces-regular_surface">Regular Parametrised Surfaces</h3>
+<div class="outline-text-3" id="text-surfaces-regular_surface">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A regular (parametrised) surface \(S\) is the image of a regular parametrisation.
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-examples">
+<h2 id="examples"><span class="section-number-2">3.</span> Examples</h2>
+<div class="outline-text-2" id="text-examples">
+</div>
+<section class="outline-3" id="outline-container-examples-title">
+<h3 id="examples-title">Examples</h3>
+<div class="outline-text-3" id="text-examples-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-paraboloid">
+<h3 id="examples-paraboloid">Paraboloid</h3>
+<div class="outline-text-3" id="text-examples-paraboloid">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\vec{r}(u, v) = (u, v, u^2 + v^2)
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-sphere">
+<h3 id="examples-sphere">Sphere</h3>
+<div class="outline-text-3" id="text-examples-sphere">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\vec{r}(\theta, \varphi) = (\sin\varphi \cos\theta, \sin\varphi \sin\theta, \cos\varphi)
+\]
+\[
+0 &lt; \theta &lt; 2\pi, \quad 0 &lt; \varphi &lt; \pi
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-torus">
+<h3 id="examples-torus">Torus</h3>
+<div class="outline-text-3" id="text-examples-torus">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+x(\theta, \varphi) &amp;= (R_{\text{out}} + R_{\text{in}} \cos \theta)\cos\varphi \\
+y(\theta, \varphi) &amp;=
+(R_{\text{out}} + R_{\text{in}} \cos \theta)\sin\varphi \\
+z(\theta, \varphi) &amp;=  R_{\text{in}} \sin \theta
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-revolution">
+<h3 id="examples-revolution">Surfaces of Revolution</h3>
+<div class="outline-text-3" id="text-examples-revolution">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(f : (a, b) \to \RR\) be a positive function.
+</p>
+<p>
+<i>Surface of revolution</i> of \(f\) around the \(z\) axis:
+\[
+\vec{r} (t, \theta) = (f(t) \cos\theta, f(t) \sin\theta, t)
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-revolution_examples">
+<h3 id="examples-revolution_examples">Surfaces of Revolution: Examples</h3>
+<div class="outline-text-3" id="text-examples-revolution_examples">
+<ul class="org-ul">
+<li>Sphere: \(f = \sqrt{1 - t^2}\)</li>
+<li>Cylinder: \(f = 1\)</li>
+<li>Paraboloid \(f = t^2\)</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-revolution_hyperboloids">
+<h3 id="examples-revolution_hyperboloids">Hyperboloids</h3>
+<div class="outline-text-3" id="text-examples-revolution_hyperboloids">
+<ul class="org-ul">
+<li>Upper sheet of two sheeted hyperboloid: \(f = \sqrt{1 + t^2}\)
+<ul class="org-ul">
+<li>\(x^2 + y^2 - z^2 = -1\)</li>
+<li>\(\vec{r}(\theta, \varphi) = (\cosh \varphi \cos\theta, \cosh \varphi \sin\theta, \sinh \varphi)\) (hyperbolic polar coords)</li>
+</ul></li>
+<li>One sheeted hyperboloid: \(f = \sqrt{t^2 - 1}\)</li>
+</ul>
+</div>
+</section>
+</section>
