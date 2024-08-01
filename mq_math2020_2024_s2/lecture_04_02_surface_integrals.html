@@ -1,0 +1,162 @@
+---
+layout: slides
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Surface Integrals</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Area of Surfaces</li>
+<li>Scalar Integrals</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-area">
+<h2 id="area"><span class="section-number-2">2.</span> Area of Surfaces</h2>
+<div class="outline-text-2" id="text-area">
+</div>
+<section class="outline-3" id="outline-container-area_title">
+<h3 id="area_title">Area of Surfaces</h3>
+<div class="outline-text-3" id="text-area_title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-orgfb7c6af">
+<h3 id="orgfb7c6af">Coordinate Tangent Vectors</h3>
+<div class="outline-text-3" id="text-orgfb7c6af">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(\vec{r}\) be a regular parametrisation The <b>coordinate tangent vectors</b> are:
+</p>
+\begin{align*}
+\vec{e}_u &amp;= \partial_u \vec{r} \\
+\vec{e}_v &amp;= \partial_v \vec{r}
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-area_element">
+<h3 id="area_element">Element of Area</h3>
+<div class="outline-text-3" id="text-area_element">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <b>element of area</b> for a regular surface is
+\[
+dA = \abs{\vec{e}_u \times \vec{e}_v} \, dudv
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-area_integral">
+<h3 id="area_integral">Area Integrals</h3>
+<div class="outline-text-3" id="text-area_integral">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The area of a surface is
+\[
+\text{Area} (S) = \iint_S dA = \iint_U \abs{\vec{e}_v \times \vec{e}_v} \, du dv
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-area_sphere1">
+<h3 id="area_sphere1">Area of the Sphere</h3>
+<div class="outline-text-3" id="text-area_sphere1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+\vec{r}(\theta, \varphi) &amp;= (\sin\varphi \cos\theta, \sin\varphi \sin\theta, \cos\varphi) \\
+\vec{e}_{\theta} &amp;= \big(-\sin\varphi \sin\theta, \sin\varphi \cos\theta, 0 \big) \\
+\vec{e}_{\varphi} &amp;= \big(\cos\varphi \cos\theta, \cos\varphi \sin\theta, -\sin\varphi) \\
+\vec{e}_{\theta} \times \vec{e}_{\varphi} &amp;= -\sin\varphi \vec{r}
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-area_sphere2">
+<h3 id="area_sphere2">Area of the Sphere</h3>
+<div class="outline-text-3" id="text-area_sphere2">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+\begin{align*}
+\vec{e}_{\theta} \times \vec{e}_{\varphi} &amp;= -\sin\varphi \vec{r} \\
+dA &amp;= \abs{\vec{e}_{\theta} \times \vec{e}_{\varphi}} \,d\varphi d\theta = \sin\varphi \, d\varphi d\theta \\
+\text{Area} &amp;= \iint dA = \int_0^{2\pi} \int_0^{\pi} \sin\varphi \, d\varphi d\theta = 4\pi
+\end{align*}
+
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-Scalar Integrals">
+<h2 id="Scalar Integrals"><span class="section-number-2">3.</span> Scalar Integrals</h2>
+<div class="outline-text-2" id="text-Scalar Integrals">
+</div>
+<section class="outline-3" id="outline-container-scalar_integrals-title">
+<h3 id="scalar_integrals-title">Scalar Integrals</h3>
+<div class="outline-text-3" id="text-scalar_integrals-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-scalar_integrals-scalar_surface">
+<h3 id="scalar_integrals-scalar_surface">Scalar Surface Integrals</h3>
+<div class="outline-text-3" id="text-scalar_integrals-scalar_surface">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The integral of \(f\) over \(S\) is defined by
+\[
+\iint_S f \&gt; dA = \iint_D f(\vec{r}(u, v)) \, \abs{\vec{e}_u \times \vec{e}_v} \, du dv
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-scalar_integrals-sphere_example">
+<h3 class="ignore_heading" id="scalar_integrals-sphere_example">Example</h3>
+<div class="outline-text-3" id="text-scalar_integrals-sphere_example">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(f(x, y, z) = x^2\) and let \(S\) be the unit sphere
+</p>
+
+\begin{align*}
+f \circ \vec{r}(\theta, \varphi) &amp;= f (\cos\theta\sin\varphi, \sin\theta\sin\varphi, \cos\varphi) \\
+&amp;= \cos^2\theta \sin^2\varphi \\
+dA &amp;= \sin\varphi d\varphi d\theta\
+\end{align*}
+
+<p>
+\[
+\iint_{S} x^2 \, dA = \int_0^{2\pi} \int_0^{\pi} \cos^2\theta \sin^3\varphi \, d\varphi d\theta = \frac{4\pi}{3}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-scalar_integrals-cylinder_example">
+<h3 id="scalar_integrals-cylinder_example">Example</h3>
+<div class="outline-text-3" id="text-scalar_integrals-cylinder_example">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(f(x, y, z) = x^2\) and let \(S\) be the cylinder
+\[
+\{(x, y, z) : x^2 + y^2 = 1, \, -1 &lt; z &lt; 1\}
+\]
+</p>
+<p>
+\[
+\vec{r} (t, \theta) = (\cos \theta, \sin \theta, t)
+\]
+\[
+\iint_S x^2 dA = \int_0^{2\pi} \int_{-1}^{1} \cos^2 \theta \, dt d\theta = 2\pi
+\]
+</p>
+</div>
+</div>
+</section>
+</section>
