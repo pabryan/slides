@@ -1,0 +1,137 @@
+---
+layout: slides
+lecture: '02'
+name: stokes
+title: Stokes' Theorem
+week: '05'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Stokes' Theorem</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Stokes' Theorem</li>
+<li>Calculating Flux Integrals</li>
+<li>Calculating Line Integrals</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-stokes">
+<h2 id="stokes"><span class="section-number-2">2.</span> Stokes' Theorem</h2>
+<div class="outline-text-2" id="text-stokes">
+</div>
+<section class="outline-3" id="outline-container-stokes-title">
+<h3 id="stokes-title">Stokes' Theorem</h3>
+<div class="outline-text-3" id="text-stokes-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-stokes-greens">
+<h3 id="stokes-greens">Curl form of Green's Theorem</h3>
+<div class="outline-text-3" id="text-stokes-greens">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(U \subseteq \RR^2\) have regular boundary curve \(C\). For any vector field on \(\RR^3\) of the form \(\vec{F} = (P, Q, 0)\) we have
+\[
+\iint_U \curl \vec{F} \cdot \vec{N} = \int_C \vec{F} \cdot \vec{T} ds
+\]
+where \(\vec{N} = \vec{e}_3\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-stokes-stokes">
+<h3 id="stokes-stokes">Stokes' Theorem</h3>
+<div class="outline-text-3" id="text-stokes-stokes">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(S \subseteq \RR^3\) be a regular surface with unit normal \(\vec{N}\) and regular boundary curve \(\partial S = C\).
+</p>
+<p>
+For any vector field \(\vec{F}\) on \(\RR^3\) we have
+\[
+\iint_S \curl \vec{F} \cdot \vec{N} = \int_C \vec{F} \cdot \vec{T} ds
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-stokes-eg1">
+
+<div class="outline-text-3" id="text-stokes-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(S = \{x^2 + y^2 + z^2 = 1, z \geq 0\}\)</li>
+<li>\(C = \{x^2 + y^2 =1 , z = 0\}\)</li>
+<li>\(\vec{F} = (-y, 0, x)\)</li>
+</ul>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-flux_integrals">
+<h2 id="flux_integrals"><span class="section-number-2">3.</span> Calculating Flux Integrals</h2>
+<div class="outline-text-2" id="text-flux_integrals">
+</div>
+<section class="outline-3" id="outline-container-flux_integrals-title">
+<h3 id="flux_integrals-title">Calculating Flux Integrals</h3>
+<div class="outline-text-3" id="text-flux_integrals-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-flux_integrals-eg1">
+
+<div class="outline-text-3" id="text-flux_integrals-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(F = (x, 2xy, x + y)\)
+</p>
+<ul class="org-ul">
+<li>hemisphere \(\{x^2 + y^2 + (z-1)^2 = 1, z \geq 1\}\)</li>
+<li>capped cylinder \(C \cup D\):
+<ul class="org-ul">
+<li>\(C = \{x^2 + y^2 = 1, 1 \leq z \leq 2\}\)</li>
+<li>\(D = \{x^2 + y^2 \leq 1, z = 2\}\)</li>
+</ul></li>
+<li>boundary \(S\) the unit circle in the \(z=1\) plane</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-flux_integrals-curl">
+<h3 id="flux_integrals-curl">Example</h3>
+<div class="outline-text-3" id="text-flux_integrals-curl">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The flux of a curl is independent of the surface. It depends only on the boundary curve.
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-line_integrals">
+<h2 id="line_integrals"><span class="section-number-2">4.</span> Calculating Line Integrals</h2>
+<div class="outline-text-2" id="text-line_integrals">
+</div>
+<section class="outline-3" id="outline-container-line_integrals-title">
+<h3 id="line_integrals-title">Calculating Line Integrals</h3>
+<div class="outline-text-3" id="text-line_integrals-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-line_integrals-eg1">
+
+<div class="outline-text-3" id="text-line_integrals-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Calculate \(\int_C zdx + x dy + y dz\)
+</p>
+<p>
+where \(C\) is the triangle with vertices \((0,0,1)\), \((3,0,-2)\), \((0,1,2)\).
+</p>
+</div>
+</div>
+</section>
+</section>

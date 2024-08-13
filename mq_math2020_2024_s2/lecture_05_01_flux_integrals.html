@@ -1,0 +1,161 @@
+---
+layout: slides
+lecture: '01'
+name: flux_integrals
+title: Flux Integrals
+week: '05'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Flux Integrals</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Normal Vector</li>
+<li>Flux Integrals</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-normal">
+<h2 id="normal"><span class="section-number-2">2.</span> Normal Vector</h2>
+<div class="outline-text-2" id="text-normal">
+</div>
+<section class="outline-3" id="outline-container-normal-title">
+<h3 id="normal-title">Normal Vector</h3>
+<div class="outline-text-3" id="text-normal-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-normal-defn">
+<h3 id="normal-defn">Normal Vector</h3>
+<div class="outline-text-3" id="text-normal-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <b>positively oriented unit normal</b> in a parametrisation is
+\[
+\vec{N} = \frac{\vec{e}_u \times \vec{e}_v}{\abs{\vec{e}_u \times \vec{e}_v}}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-normal-perpendicular">
+<h3 id="normal-perpendicular">Normal Vector</h3>
+<div class="outline-text-3" id="text-normal-perpendicular">
+<p>
+\(\vec{N}\) is perpendicular to \(S\)
+</p>
+<p>
+\(\vec{N} \cdot \vec{e}_u = \vec{N} \cdot \vec{e}_v = 0\)
+</p>
+</div>
+</section>
+<section class="outline-3" id="outline-container-normal-orientation_defn">
+<h3 id="normal-orientation_defn">Orientation</h3>
+<div class="outline-text-3" id="text-normal-orientation_defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Positive orientation is the right hand rule. Negative orientation is the left hand rule.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-normal-orientation_examples">
+<h3 id="normal-orientation_examples">Orientation Examples</h3>
+<div class="outline-text-3" id="text-normal-orientation_examples">
+<ul class="org-ul">
+<li>Positive: \(\big(\vec{e}_u, \vec{e}_v, \vec{N}\big)\), \(\big(\vec{e}_v, \vec{e}_u, -\vec{N}\big)\)</li>
+<li>Negative: \(\big(\vec{e}_u, \vec{e}_v, -\vec{N}\big)\), \(\big(\vec{e}_v, \vec{e}_u, \vec{N}\big)\)</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-normal-examples">
+
+<div class="outline-text-3" id="text-normal-examples">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>Sphere: \(\vec{N}(p) = p\)</li>
+<li>\(xy\)-plane: \(\vec{N} = \vec{e}_3\)</li>
+<li>Cylinder: \(\vec{N}(x, y, z) = (x, y, 0)\)</li>
+<li>Graph \(z = f(x, y)\): \(\vec{N} = \frac{\vec{e}_3 - \nabla f}{\sqrt{1 + \abs{\nabla f}^2}}\)</li>
+</ul>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-flux_integrals">
+<h2 id="flux_integrals"><span class="section-number-2">3.</span> Flux Integrals</h2>
+<div class="outline-text-2" id="text-flux_integrals">
+</div>
+<section class="outline-3" id="outline-container-flux_integrals-title">
+<h3 id="flux_integrals-title">Flux Integrals</h3>
+<div class="outline-text-3" id="text-flux_integrals-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-flux_integrals-flux_integral">
+<h3 id="flux_integrals-flux_integral">Flux Integrals</h3>
+<div class="outline-text-3" id="text-flux_integrals-flux_integral">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The <b>flux</b> of a vector field \(\vec{F}\) across a surface \(S\) is
+</p>
+\begin{align*}
+\iint_S \vec{F} \cdot \vec{N} dA &amp;= \iint_U \vec{F} \cdot \frac{\vec{e}_u \times \vec{e}_v}{\abs{\vec{e}_u \times \vec{e}_v}} \abs{\vec{e}_u \times \vec{e}_v} \, du dv \\
+&amp;= \iint_U \vec{F} \cdot \big(\vec{e}_u \times \vec{e}_v\big) \, du dv
+\end{align*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-flux_integrals-parametrisation_independence">
+<h3 id="flux_integrals-parametrisation_independence">Flux Integrals</h3>
+<div class="outline-text-3" id="text-flux_integrals-parametrisation_independence">
+<ul class="org-ul">
+<li>Flux integrals are independent of parametrisation up to orientation</li>
+<li>Change of orientation \(\vec{N} \mapsto -\vec{N}\) changes the <b>sign</b> of the flux integral</li>
+</ul>
+</div>
+</section>
+<section class="outline-3" id="outline-container-flux_integrals-eg1">
+
+<div class="outline-text-3" id="text-flux_integrals-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(S = \{-1 &lt; x &lt; 1, -1 &lt; y &lt; 1, z = 0\}\)
+</p>
+<p>
+\(\vec{F} = (xz^2, e^y, x e^z)\)
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-flux_integrals-eg2">
+
+<div class="outline-text-3" id="text-flux_integrals-eg2">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(S = \{x^2 + y^2 + z^2 = 1\}\)
+</p>
+<p>
+\(\vec{F_1} = (x, y, z)\), \(\vec{F_2} = (-y, x, 0)\)
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-flux_integrals-eg3">
+
+<div class="outline-text-3" id="text-flux_integrals-eg3">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(S = \{x^2 + y^2 = 1\}\)
+</p>
+<p>
+\(\vec{F_1} = (x, y, z)\), \(\vec{F_2} = (-y, x, 0)\)
+</p>
+</div>
+</div>
+</section>
+</section>
