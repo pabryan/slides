@@ -15,8 +15,8 @@ week: '05'
 <div class="outline-text-3" id="text-contents-contents">
 <ul class="org-ul">
 <li>Stokes' Theorem</li>
-<li>Calculating Flux Integrals</li>
-<li>Calculating Line Integrals</li>
+<li>Calculating Flux and Line Integrals</li>
+<li>Irrotational Vector Fields</li>
 </ul>
 </div>
 </section>
@@ -37,7 +37,7 @@ week: '05'
 <p>
 Let \(U \subseteq \RR^2\) have regular boundary curve \(C\). For any vector field on \(\RR^3\) of the form \(\vec{F} = (P, Q, 0)\) we have
 \[
-\iint_U \curl \vec{F} \cdot \vec{N} = \int_C \vec{F} \cdot \vec{T} ds
+\iint_U \curl \vec{F} \cdot \vec{N} dA = \int_C \vec{F} \cdot \vec{T} ds
 \]
 where \(\vec{N} = \vec{e}_3\).
 </p>
@@ -54,7 +54,7 @@ Let \(S \subseteq \RR^3\) be a regular surface with unit normal \(\vec{N}\) and 
 <p>
 For any vector field \(\vec{F}\) on \(\RR^3\) we have
 \[
-\iint_S \curl \vec{F} \cdot \vec{N} = \int_C \vec{F} \cdot \vec{T} ds
+\iint_S \curl \vec{F} \cdot \vec{N} dA = \int_C \vec{F} \cdot \vec{T} ds
 \]
 </p>
 </div>
@@ -73,18 +73,28 @@ For any vector field \(\vec{F}\) on \(\RR^3\) we have
 </div>
 </section>
 </section> 
- <section class="outline-2" id="outline-container-flux_integrals">
-<h2 id="flux_integrals"><span class="section-number-2">3.</span> Calculating Flux Integrals</h2>
-<div class="outline-text-2" id="text-flux_integrals">
+ <section class="outline-2" id="outline-container-integrals">
+<h2 id="integrals"><span class="section-number-2">3.</span> Calculating Flux and Line Integrals</h2>
+<div class="outline-text-2" id="text-integrals">
 </div>
-<section class="outline-3" id="outline-container-flux_integrals-title">
-<h3 id="flux_integrals-title">Calculating Flux Integrals</h3>
-<div class="outline-text-3" id="text-flux_integrals-title">
+<section class="outline-3" id="outline-container-integrals-title">
+<h3 id="integrals-title">Calculating Flux and Line Integrals</h3>
+<div class="outline-text-3" id="text-integrals-title">
 </div>
 </section>
-<section class="outline-3" id="outline-container-flux_integrals-eg1">
+<section class="outline-3" id="outline-container-integrals-curl">
+<h3 id="integrals-curl">Surface Independence</h3>
+<div class="outline-text-3" id="text-integrals-curl">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The flux of a curl is independent of the surface. It depends only on the boundary curve.
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-integrals-eg1">
 
-<div class="outline-text-3" id="text-flux_integrals-eg1">
+<div class="outline-text-3" id="text-integrals-eg1">
 <div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
 <p>
 \(F = (x, 2xy, x + y)\)
@@ -101,35 +111,60 @@ For any vector field \(\vec{F}\) on \(\RR^3\) we have
 </div>
 </div>
 </section>
-<section class="outline-3" id="outline-container-flux_integrals-curl">
-<h3 id="flux_integrals-curl">Surface Independence</h3>
-<div class="outline-text-3" id="text-flux_integrals-curl">
-<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
-<p>
-The flux of a curl is independent of the surface. It depends only on the boundary curve.
-</p>
-</div>
-</div>
-</section>
-</section> 
- <section class="outline-2" id="outline-container-line_integrals">
-<h2 id="line_integrals"><span class="section-number-2">4.</span> Calculating Line Integrals</h2>
-<div class="outline-text-2" id="text-line_integrals">
-</div>
-<section class="outline-3" id="outline-container-line_integrals-title">
-<h3 id="line_integrals-title">Calculating Line Integrals</h3>
-<div class="outline-text-3" id="text-line_integrals-title">
-</div>
-</section>
-<section class="outline-3" id="outline-container-line_integrals-eg1">
+<section class="outline-3" id="outline-container-integrals-eg1">
 
-<div class="outline-text-3" id="text-line_integrals-eg1">
+<div class="outline-text-3" id="text-integrals-eg1">
 <div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
 <p>
 Calculate \(\int_C zdx + x dy + y dz\)
 </p>
 <p>
 where \(C\) is the triangle with vertices \((0,0,1)\), \((3,0,-2)\), \((0,1,2)\).
+</p>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-irrotational">
+<h2 id="irrotational"><span class="section-number-2">4.</span> Irrotational Vector Fields</h2>
+<div class="outline-text-2" id="text-irrotational">
+</div>
+<section class="outline-3" id="outline-container-irrotational-title">
+<h3 id="irrotational-title">Irrotational Vector Fields</h3>
+<div class="outline-text-3" id="text-irrotational-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-irrotational-defn">
+<h3 id="irrotational-defn">Irrotational Vector Fields</h3>
+<div class="outline-text-3" id="text-irrotational-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A vector field \(\vec{F}\) is called <b>irrotational</b> if \(\curl \vec{F} = 0\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-source_free-thm">
+<h3 id="source_free-thm">Irrotational Vector Fields</h3>
+<div class="outline-text-3" id="text-source_free-thm">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The following are equivalent
+</p>
+<ol class="org-ol">
+<li>\(\vec{F}\) is irrotational</li>
+<li>\(\vec{F}\) is conservative: work around any loop is \(0\)</li>
+<li>On simply connected domains \(\vec{F} = \nabla f\)</li>
+</ol>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-source_free-eg">
+
+<div class="outline-text-3" id="text-source_free-eg">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(\vec{F} = (x, y, z)\) is the gradient of \(f = \frac{x^2}{2} + \frac{y^2}{2} + \frac{z^2}{2}\)
 </p>
 </div>
 </div>

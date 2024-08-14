@@ -1,0 +1,167 @@
+---
+layout: slides
+lecture: '01'
+name: divergence_theorem
+title: Divergence Theorem
+week: '06'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Divergence Theorem</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Divergence Theorem</li>
+<li>Examples</li>
+<li>Source Free Vector Fields</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-divergence_theorem">
+<h2 id="divergence_theorem"><span class="section-number-2">2.</span> Divergence Theorem</h2>
+<div class="outline-text-2" id="text-divergence_theorem">
+</div>
+<section class="outline-3" id="outline-container-divergence_theorem-title">
+<h3 id="divergence_theorem-title">Divergence Theorem</h3>
+<div class="outline-text-3" id="text-divergence_theorem-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-divergence_theorem-thm">
+<h3 id="divergence_theorem-thm">Divergence Theorem</h3>
+<div class="outline-text-3" id="text-divergence_theorem-thm">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(\Omega \subseteq \RR^3\) be a connected open set with boundary surface \(S = \partial \Omega\). For any vector field \(F\),
+\[
+\iiint_{\Omega} \divg \vec{F} dV = \int_{S} \vec{F} \cdot \vec{N} dA
+\]
+where \(\vec{N}\) is the outward unit normal to \(S\).
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-divergence_theorem-thm">
+<h3 id="divergence_theorem-thm">Divergence Theorem</h3>
+<div class="outline-text-3" id="text-divergence_theorem-thm">
+<ul class="org-ul">
+<li><p>
+Total divergence equals flux through boundary
+</p>
+<p>
+<b>The amount of material leaving a region is the amount passing through the boundary!</b>
+</p></li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-examples">
+<h2 id="examples"><span class="section-number-2">3.</span> Examples</h2>
+<div class="outline-text-2" id="text-examples">
+</div>
+<section class="outline-3" id="outline-container-examples-title">
+<h3 id="examples-title">Examples</h3>
+<div class="outline-text-3" id="text-examples-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-eg1">
+
+<div class="outline-text-3" id="text-examples-eg1">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(\vec{F} = 2x\vec{e}_1 + y^2 \vec{e}_2 + z^2 \vec{e}_3\)</li>
+<li>\(\mathbb{S}^2 = \{x^2 + y^2 + z^2 = 1\}\)</li>
+<li>\(\mathbb{B}^3 = \{x^2 + y^2 + z^2 &lt; 1\}\)</li>
+</ul>
+<p>
+\[
+\iint_{\mathbb{S}^2} \vec{F} \cdot \vec{N} dA = \iiint_{\mathbb{B}^3} \divg \vec{F} dV = \frac{8\pi}{3}
+\]
+</p>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-examples-volume">
+<h3 id="examples-volume">Volume</h3>
+<div class="outline-text-3" id="text-examples-volume">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\[
+\text{Vol}(\Omega) = \frac{1}{3} \iint_{\partial \Omega} \vec{R} \cdot \vec{N} dA
+\]
+where \(\vec{R}(p) = p\) is the radial vector field.
+</p>
+</div>
+<ul class="org-ul">
+<li>\(\text{Vol}(\mathbb{B}^3) = \tfrac{4\pi}{3}\)</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-source_free">
+<h2 id="source_free"><span class="section-number-2">4.</span> Source Free Vector Fields</h2>
+<div class="outline-text-2" id="text-source_free">
+</div>
+<section class="outline-3" id="outline-container-source_free-title">
+<h3 id="source_free-title">Source Free Vector Fields</h3>
+<div class="outline-text-3" id="text-source_free-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-source_free-defn">
+<h3 id="source_free-defn">Source Free Vector Fields</h3>
+<div class="outline-text-3" id="text-source_free-defn">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A vector field \(\vec{F}\) is called <b>source free</b> if \(\divg \vec{F} = 0\).
+</p>
+</div>
+<p>
+Other names are <b>solenoidal</b> and <b>incompressible</b>
+</p>
+</div>
+</section>
+<section class="outline-3" id="outline-container-source_free-stream_functions">
+<h3 id="source_free-stream_functions">Stream Functions</h3>
+<div class="outline-text-3" id="text-source_free-stream_functions">
+<div class="defn"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A 2d vector field \(\vec{F}\) has a <b>stream function</b> if there is a function \(g\) such that
+\[
+\vec{F} = (\partial_y g, -\partial_x g) = R_{-\pi/2} \left(\nabla g\right)
+\]
+</p>
+</div>
+<p>
+\(\vec{F}\) is tangent to the level curves of \(g\)
+</p>
+</div>
+</section>
+<section class="outline-3" id="outline-container-source_free-thm">
+<h3 id="source_free-thm">Source Free Vector Fields</h3>
+<div class="outline-text-3" id="text-source_free-thm">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The following are equivalent
+</p>
+<ol class="org-ol">
+<li>\(\vec{F}\) is source free</li>
+<li>The flux across any closed surface is \(0\)</li>
+<li>2d simply connected: \(\vec{F}\) had a stream function \(g\)</li>
+</ol>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-source_free-eg">
+
+<div class="outline-text-3" id="text-source_free-eg">
+<div class="eg"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+\(\vec{F} = (-y, x)\) has stream function \(g = \frac{x^2}{2} + \frac{y^2}{2}\)
+</p>
+</div>
+</div>
+</section>
+</section>
