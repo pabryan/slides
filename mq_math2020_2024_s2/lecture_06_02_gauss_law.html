@@ -1,0 +1,141 @@
+---
+layout: slides
+lecture: '02'
+name: gauss_law
+title: Gauss' Law
+week: '06'
+---
+
+<section class="outline-2" id="outline-container-contents">
+<h2 id="contents"><span class="section-number-2">1.</span> Contents</h2>
+<div class="outline-text-2" id="text-contents">
+</div>
+<section class="outline-3" id="outline-container-contents-contents">
+<h3 id="contents-contents">Gauss' Law</h3>
+<div class="outline-text-3" id="text-contents-contents">
+<ul class="org-ul">
+<li>Gauss' Law</li>
+<li>Electric Field</li>
+</ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-gauss_law">
+<h2 id="gauss_law"><span class="section-number-2">2.</span> Gauss' Law</h2>
+<div class="outline-text-2" id="text-gauss_law">
+</div>
+<section class="outline-3" id="outline-container-gauss_law-title">
+<h3 id="gauss_law-title">Gauss' Law</h3>
+<div class="outline-text-3" id="text-gauss_law-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-gauss_law-thm">
+<h3 id="gauss_law-thm">Gauss' Law</h3>
+<div class="outline-text-3" id="text-gauss_law-thm">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+Let \(\vec{F}(p) = \frac{p}{r^3}\)
+</p>
+<p>
+Then for any closed surface \(S\) enclosing the region \(\Omega\)
+</p>
+\begin{equation*}
+\iint_S \vec{F} \cdot \vec{N} dA = \begin{cases}
+4\pi &amp; 0 \in \Omega \\
+0 &amp; 0 \notin \overline{\Omega}
+\end{cases}
+\end{equation*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-gauss_law-pf1">
+
+<div class="outline-text-3" id="text-gauss_law-pf1">
+<div class="pf"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>If \(0 \notin \overline{\Omega}\) then \(\vec{F}\) is defined on \(\Omega\)</li>
+<li>\(\divg \vec{F} = 0\) on \(\Omega\)</li>
+<li>Divergence theorem
+\[
+  \iint_S \vec{F} \cdot \vec{N} dA = \iiint_{\Omega} \divg \vec{F} dV = 0
+  \]</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-gauss_law-pf2">
+
+<div class="outline-text-3" id="text-gauss_law-pf2">
+<div class="pf"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(0 \in \overline{\Omega}\): \(\vec{F}\) defined on \(\Omega_{\epsilon} = \Omega \backslash \mathbb{B}_{\epsilon}(0)\)</li>
+<li>\(\divg \vec{F} = 0\) on \(\Omega_{\epsilon}\)</li>
+<li>Divergence theorem
+\[
+  0 =\iiint_{\Omega_{\epsilon}} \divg \vec{F} dV = \iint_{\partial \Omega_{\epsilon}} \vec{F} \cdot \vec{N} dA
+  \]</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-gauss_law-pf3">
+
+<div class="outline-text-3" id="text-gauss_law-pf3">
+<div class="pf"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\[
+  0 =\iiint_{\Omega_{\epsilon}} \divg \vec{F} dV = \iint_{\partial \Omega_{\epsilon}} \vec{F} \cdot \vec{N} dA
+  \]</li>
+<li>\(\partial \Omega_{\epsilon} = S - \mathbb{S}_{\epsilon}\)</li>
+<li>\[
+  \iint_S \vec{F} \cdot \vec{N} dA = \iint_{\mathbb{S}_{\epsilon}} \vec{F} \cdot \vec{N} dA
+  \]</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-gauss_law-pf3">
+
+<div class="outline-text-3" id="text-gauss_law-pf3">
+<div class="pf"><div class="card-header"><h5 class="card-title"></h5></div>
+<ul class="org-ul">
+<li>\(\vec{N}(p) = \frac{p}{\epsilon}\)</li>
+<li><p>
+Then
+</p>
+
+\begin{align*}
+\iint_{\mathbb{S}_{\epsilon}} \vec{F} \cdot \vec{N} dA &amp;= \iint_{\mathbb{S}_{\epsilon}} \frac{p}{\epsilon^3} \cdot \frac{p}{\epsilon} dA \\
+&amp;= \iint_{\mathbb{S}_{\epsilon}} \frac{1}{\epsilon^2} dA \\
+&amp;= 4\pi
+\end{align*}</li>
+</ul>
+</div>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-electric">
+<h2 id="electric"><span class="section-number-2">3.</span> Electric Field</h2>
+<div class="outline-text-2" id="text-electric">
+</div>
+<section class="outline-3" id="outline-container-electric">
+<h3 id="electric">Electric Field</h3>
+<div class="outline-text-3" id="text-electric">
+</div>
+</section>
+<section class="outline-3" id="outline-container-electric-thm">
+<h3 id="electric-thm">Electric Field</h3>
+<div class="outline-text-3" id="text-electric-thm">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+The flux of the electric field through a surface \(S\) is proportional to the enclosed charge.
+</p>
+</div>
+<ul class="org-ul">
+<li>point charge: \(\vec{E} = \frac{1}{4\pi \epsilon_0} \frac{p}{r^3}\)</li>
+<li>multiple point charges: superposition (linearity)</li>
+</ul>
+</div>
+</section>
+</section>
