@@ -16,6 +16,7 @@ week: '06'
 <ul class="org-ul">
 <li>Gauss' Law</li>
 <li>Electric Field</li>
+<li>Maxwell's Equations</li>
 </ul>
 </div>
 </section>
@@ -119,9 +120,9 @@ Then
 <h2 id="electric"><span class="section-number-2">3.</span> Electric Field</h2>
 <div class="outline-text-2" id="text-electric">
 </div>
-<section class="outline-3" id="outline-container-electric">
-<h3 id="electric">Electric Field</h3>
-<div class="outline-text-3" id="text-electric">
+<section class="outline-3" id="outline-container-electric-title">
+<h3 id="electric-title">Electric Field</h3>
+<div class="outline-text-3" id="text-electric-title">
 </div>
 </section>
 <section class="outline-3" id="outline-container-electric-thm">
@@ -136,6 +137,51 @@ The flux of the electric field through a surface \(S\) is proportional to the en
 <li>point charge: \(\vec{E} = \frac{1}{4\pi \epsilon_0} \frac{p}{r^3}\)</li>
 <li>multiple point charges: superposition (linearity)</li>
 </ul>
+</div>
+</section>
+</section> 
+ <section class="outline-2" id="outline-container-maxwell">
+<h2 id="maxwell"><span class="section-number-2">4.</span> Maxwell's Equations</h2>
+<div class="outline-text-2" id="text-maxwell">
+</div>
+<section class="outline-3" id="outline-container-maxwell-title">
+<h3 id="maxwell-title">Maxwell's Equations</h3>
+<div class="outline-text-3" id="text-maxwell-title">
+</div>
+</section>
+<section class="outline-3" id="outline-container-maxwell-equations">
+<h3 id="maxwell-equations">Maxwell's Equations</h3>
+<div class="outline-text-3" id="text-maxwell-equations">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+</p>
+
+\begin{equation*}
+\begin{cases}
+\divg \vec{E} &amp;= \frac{\rho}{\epsilon_0} \\
+\curl \vec{E} &amp;= - \partial_t \vec{B} \\
+\divg \vec{B} &amp;= 0 \\
+\curl \vec{B} &amp;= \mu_0\left(\vec{J} + \epsilon_0 \partial_t \vec{E}\right)
+\end{cases}
+\end{equation*}
+
+</div>
+</div>
+</section>
+<section class="outline-3" id="outline-container-maxwell-faraday">
+<h3 id="maxwell-faraday">Faraday Cage</h3>
+<div class="outline-text-3" id="text-maxwell-faraday">
+<div class="thm"><div class="card-header"><h5 class="card-title"></h5></div>
+<p>
+A perfectly conducting, closed surface \(S\) shields any external electrostatic field.
+</p>
+</div>
+
+\begin{align*}
+\vec{E} &amp;= \nabla \varphi \\
+\varphi|_S &amp;\equiv \text{ constant} \\
+\Delta \varphi &amp;:= \divg \nabla \varphi = 0
+\end{align*}
 </div>
 </section>
 </section>
